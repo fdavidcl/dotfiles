@@ -73,3 +73,8 @@ alias spdycat='/media/datos/Downloads/Linux/spdylay-1.3.1/src/spdycat'
 # R, Renv utilities
 export PATH="$HOME/.Renv/bin:$PATH"
 eval "$(Renv init -)"
+
+# Update this file from Github
+function aliases-update() {
+	curl -L https://github.com/fdavidcl/bash-scripts/raw/master/bash_aliases.sh > ~/.fdavidcl_bash_aliases
+}
