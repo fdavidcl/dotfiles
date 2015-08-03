@@ -7,10 +7,28 @@
 # Prompt customization (http://bashrcgenerator.com/)
 export PS1="\[\e[00;37m\]\u \[\e[0m\]\[\e[00;36m\][\W]\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
 
+### Battery related functions
 # Set CPU governor (performance/ondemand/powersave...)
 function setgov () {
     echo "$1" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 }
+
+function lm() {
+    echo 5 | sudo tee /proc/sys/vm/laptop_mode
+}
+
+turbo() {
+    local turbo="/sys/devices/system/cpu/intel_pstate/no_turbo"
+    local cur=`cat $turbo`
+
+    [[ cur -eq 1 ]] \
+       && echo "Activando Intel Turbo Boost" \
+       && sudo su -c "echo 0 > $turbo" \
+       || ( echo "Desactivando Intel Turbo Boost" \
+            && sudo su -c "echo 1 > $turbo"
+          )
+}
+
 
 # Simple TODO function
 function todo() {
