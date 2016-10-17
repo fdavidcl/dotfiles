@@ -1,18 +1,20 @@
-# bash-scripts
-Some aliases and functions for .bashrc/.bash_aliases
+# dotfiles
+These are my initialization files for some programs and terminals
 
-## Installation
+## Contents
 
-Copy the contents of `bash_aliases.sh` to your `.bashrc` file or automatically install via curl:
+### bash
 
-~~~
-curl -L https://github.com/fdavidcl/bash-scripts/raw/master/install.sh | bash
-~~~
+Contains a handful of aliases for the Bash shell.
 
-## Updates
+### emacs
 
-A function is provided in order to update the aliases file:
+If you know what `init.el` is there's probably nothing useful for you here, maybe check out [@M42's .emacs.d](https://github.com/M42/.emacs.d) instead.
 
-~~~
-aliases-update
-~~~
+### fish
+
+If you use the Fish shell and you want to configure Renv for your R development, you've come to the right place. Otherwise nothing to see here.
+
+## Usage
+
+Whatever can be licensed here is MIT licensed, so copy and modify whatever you want. Happy tinkering :grin:
