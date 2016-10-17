@@ -70,7 +70,6 @@
    (quote
     (yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
  '(paradox-automatically-star nil)
- '(paradox-github-token "f4515b41173fbc3bcd2cffbb8f154c542ea84a4a")
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(server-mode nil)
