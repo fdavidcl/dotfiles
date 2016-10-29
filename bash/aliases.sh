@@ -126,15 +126,3 @@ source $HOME/.oh-my-git/prompt.sh
 
 # needs micro editor:
 export EDITOR=micro
-
-
-function monitors() {
-    xrandr --output eDP1 --auto --output HDMI1 --auto --panning 3840x2160+3840+0 --scale 2x2 --left-of eDP1
-}
-
-# prevents errors on steam load
-function steam() {
-    LD_PRELOAD='/usr/$LIB/libstdc++.so.6 /usr/$LIB/libgcc_s.so.1 /usr/$LIB/libxcb.so.1 /usr/$LIB/libgpg-error.so' steam
-}
-
-uptime
