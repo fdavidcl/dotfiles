@@ -55,7 +55,7 @@
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(inhibit-startup-screen t)
- '(markdown-command "kramdown")
+ '(markdown-command "pandoc --webtex")
  '(menu-bar-mode nil)
  '(nrepl-message-colors
    (quote
@@ -68,7 +68,7 @@
      ("melpa" . "https://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
+    (pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
  '(paradox-automatically-star nil)
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
@@ -115,6 +115,13 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 102 :width normal :foundry "PfEd" :family "Source Code Pro")))))
 
+; Keybindings
 (global-set-key [f8] 'neotree-toggle)
 (global-set-key (kbd "<f5>") 'magit-status)
 
+;; Switch buffers with ctrl-tab
+(global-set-key [C-tab] 'other-window)
+(global-set-key [C-iso-lefttab] 
+    (lambda ()
+      (interactive)
+      (other-window -1)))

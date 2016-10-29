@@ -56,6 +56,10 @@ function npdfmd() {
     pandoc --to latex --latex-engine pdflatex -N -o $1.pdf $1 --template /home/fdavidcl/R/x86_64-pc-linux-gnu-library/3.1/rmarkdown/rmd/latex/default.tex
 }
 
+# needs micro editor:
+export EDITOR=micro
+
+
 # Misc. utilities and shortcuts
 alias c='clear'
 alias p='ping t.co'
@@ -84,7 +88,7 @@ alias shrug='echo -n "¯\_(ツ)_/¯" | xclip -selection clipboard'
 alias fuck='eval $(thefuck $(fc -ln -1))'
 
 # Git shortcuts
-alias git='hub' # <-- needs hub
+# alias git='hub' # <-- needs hub
 alias gitallsync='git commit -a && git pull && git push'
 alias gitsync='git commit && git pull && git push'
 alias gitmod='git config core.fileMode false'
@@ -126,3 +130,6 @@ source $HOME/.oh-my-git/prompt.sh
 
 # needs micro editor:
 export EDITOR=micro
+
+uptime
+(which task >> /dev/null) && task next
