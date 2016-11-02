@@ -54,6 +54,7 @@
  '(hl-sexp-background-color "#1c1f26")
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
+ '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(markdown-command "pandoc --webtex")
  '(menu-bar-mode nil)
@@ -68,7 +69,7 @@
      ("melpa" . "https://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
+    (ess ess-R-data-view ess-R-object-popup ess-smart-equals ess-smart-underscore pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
  '(paradox-automatically-star nil)
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
@@ -118,6 +119,8 @@
 ; Keybindings
 (global-set-key [f8] 'neotree-toggle)
 (global-set-key (kbd "<f5>") 'magit-status)
+(global-set-key [f12] 'ess-eval-region-or-line-and-step)
+(global-set-key [C-S-a] 'mark-whole-buffer)
 
 ;; Switch buffers with ctrl-tab
 (global-set-key [C-tab] 'other-window)
