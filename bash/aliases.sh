@@ -71,6 +71,8 @@ alias r='irb'
 alias y='python'
 alias m='make'
 alias t='touch'
+alias l='ls -CF'
+alias ll='ls -alFh'
 # pip install ddg to use these:
 alias d='ddg'
 alias wa='ddg -b wa'
@@ -86,6 +88,9 @@ alias shrug='echo -n "¯\_(ツ)_/¯" | xclip -selection clipboard'
 
 # pip install thefuck to use this:
 alias fuck='eval $(thefuck $(fc -ln -1))'
+
+# Short security news delivered via DNS (thanks Enki!)
+alias istheinternetonfire='dig +short -t txt istheinternetonfire.com'
 
 # Git shortcuts
 # alias git='hub' # <-- needs hub
