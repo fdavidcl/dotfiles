@@ -3,7 +3,10 @@
 #
 
 # Prompt customization (http://bashrcgenerator.com/)
-export PS1="\[\e[00;37m\]\u \[\e[0m\]\[\e[00;36m\][\W]\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
+#export PS1="\[\e[00;37m\]\u@\h \[\e[0m\]\[\e[00;36m\][\W]\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
+export PS1="\[\033[38;5;10m\]\u@\h:\[$(tput sgr0)\]\[\033[38;5;6m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+
+export PATH=$HOME/.local/bin:$PATH
 
 ### Battery related aliases
 # Set CPU governor (performance/ondemand/powersave...)
@@ -76,6 +79,8 @@ alias ll='ls -alFh'
 # pip install ddg to use these:
 alias d='ddg'
 alias wa='ddg -b wa'
+# needs taskwarrior (apt install task, pacman -Sy task)
+alias k='task'
 
 # load virtualbox modules
 alias vb='sudo modprobe vboxnetflt vboxpci vboxdrv vboxnetadp'
@@ -114,6 +119,12 @@ alias nvidia-settings='optirun nvidia-settings -c :8'
 # Useful if GNOME Shell hangs: Change tty (Ctrl-Alt-F2) and use this
 alias gnome-recover='gnome-shell -r -d :0.0'
 
+# Behavior of pass defaults to copying to the clipboard
+oldpass=`which pass`
+pass() {
+  [[ $# -eq 1 ]] && $oldpass -c $1 || $oldpass "$@"
+}
+
 export TERM=xterm-256color
 
 # needs z:
@@ -135,6 +146,7 @@ source $HOME/.oh-my-git/prompt.sh
 
 # needs micro editor:
 export EDITOR=micro
+alias nano=micro # I keep launching nano by mistake
 
 uptime
 (which task >> /dev/null) && task next
