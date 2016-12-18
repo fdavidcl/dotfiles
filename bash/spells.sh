@@ -19,7 +19,7 @@ function impedimenta() {
 function lumos() {
   [[ $# -gt 0 ]] && (
     [[ $1 = "maxima" ]] && (
-      ls -al
+      ls -alh
     ) || (
       ls
     )
