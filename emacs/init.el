@@ -56,6 +56,7 @@
  '(ido-mode (quote both) nil (ido))
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
+ '(js-indent-level 2)
  '(markdown-command "pandoc --webtex")
  '(menu-bar-mode nil)
  '(nrepl-message-colors
@@ -69,11 +70,10 @@
      ("melpa" . "https://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (ess ess-R-data-view ess-R-object-popup ess-smart-equals ess-smart-underscore pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
+    (column-marker haskell-mode haml-mode drag-stuff ess ess-R-data-view ess-R-object-popup ess-smart-equals ess-smart-underscore pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
  '(paradox-automatically-star nil)
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
- '(server-mode nil)
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
  '(term-default-bg-color "#002b36")
  '(term-default-fg-color "#839496")
@@ -120,7 +120,7 @@
 (global-set-key [f8] 'neotree-toggle)
 (global-set-key (kbd "<f5>") 'magit-status)
 (global-set-key [f12] 'ess-eval-region-or-line-and-step)
-(global-set-key [C-S-a] 'mark-whole-buffer)
+(global-set-key (kbd "C-x C-a") 'mark-whole-buffer)
 
 ;; Switch buffers with ctrl-tab
 (global-set-key [C-tab] 'other-window)
