@@ -1,0 +1,419 @@
+//
+// This is a sample Telegram Desktop theme file.
+// It was generated from the 'colors.palette' style file.
+//
+// To create a theme with a background image included you should
+// put two files in a .zip archive:
+//
+// First one is the color scheme like the one you're viewing
+// right now, this file should be named 'colors.tdesktop-theme'.
+//
+// Second one should be the background image and it can be named
+// 'background.jpg', 'background.png', 'tiled.jpg' or 'tiled.png'.
+// You should name it 'background' (if you'd like it not to be tiled),
+// or it can be named 'tiled' (if you'd like it to be tiled).
+//
+// After that you need to change the extension of your .zip archive
+// to 'tdesktop-theme', so you'll have:
+//
+// mytheme.tdesktop-theme
+// |-colors.tdesktop-theme
+// |-background.jpg (or tiled.jpg, background.png, tiled.png)
+//
+
+/* Colores solarized http://ethanschoonover.com/solarized 
+
+SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
+--------- ------- ---- -------  ----------- ---------- ----------- -----------
+base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
+base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
+base01    #586e75 10/7 brgreen  240 #585858 45 -07 -07  88 110 117 194  25  46
+base00    #657b83 11/7 bryellow 241 #626262 50 -07 -07 101 123 131 195  23  51
+base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
+base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63
+base2     #eee8d5  7/7 white    254 #e4e4e4 92 -00  10 238 232 213  44  11  93
+base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99
+yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71
+orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
+red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
+magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
+violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
+blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
+cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
+green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+*/
+
+windowBg: #002b36;
+windowFg: #839496;
+windowBgOver: #073642;
+windowBgRipple: #e5e5e5;
+windowFgOver: windowFg;
+windowSubTextFg: #999999;
+windowSubTextFgOver: #919191;
+windowBoldFg: #93a1a1;
+windowBoldFgOver: #93a1a1;
+windowBgActive: #2aa198;
+windowFgActive: #002b36;
+windowActiveTextFg: #168acd;
+windowShadowFg: #839496;
+windowShadowFgFallback: #073642;
+shadowFg: #83949618;
+slideFadeOutBg: #8394963c;
+slideFadeOutShadowFg: windowShadowFg;
+imageBg: #839496;
+imageBgTransparent: #002b36;
+activeButtonBg: windowBgActive;
+activeButtonBgOver: #2aa198;
+activeButtonBgRipple: #93a1a1;
+activeButtonFg: windowFgActive;
+activeButtonFgOver: activeButtonFg;
+activeButtonSecondaryFg: #cceeff;
+activeButtonSecondaryFgOver: activeButtonSecondaryFg;
+activeLineFg: #37a1de;
+activeLineFgError: #e48383;
+lightButtonBg: windowBg;
+lightButtonBgOver: #e3f1fa;
+lightButtonBgRipple: #c9e4f6;
+lightButtonFg: windowActiveTextFg;
+lightButtonFgOver: lightButtonFg;
+attentionButtonFg: #d14e4e;
+attentionButtonFgOver: #d14e4e;
+attentionButtonBgOver: #fcdfde;
+attentionButtonBgRipple: #f4c3c2;
+outlineButtonBg: windowBg;
+outlineButtonBgOver: lightButtonBgOver;
+outlineButtonOutlineFg: windowBgActive;
+outlineButtonBgRipple: lightButtonBgRipple;
+menuBg: windowBg;
+menuBgOver: windowBgOver;
+menuBgRipple: windowBgRipple;
+menuIconFg: #a8a8a8;
+menuIconFgOver: #999999;
+menuSubmenuArrowFg: #373737;
+menuFgDisabled: #cccccc;
+menuSeparatorFg: #073642;
+scrollBarBg: #83949653;
+scrollBarBgOver: #8394967a;
+scrollBg: #8394961a;
+scrollBgOver: #8394962c;
+smallCloseIconFg: #c7c7c7;
+smallCloseIconFgOver: #a3a3a3;
+radialFg: windowFgActive;
+radialBg: #83949656;
+placeholderFg: windowSubTextFg;
+placeholderFgActive: #aaaaaa;
+inputBorderFg: #e0e0e0;
+filterInputBorderFg: #54c3f3;
+filterInputInactiveBg: windowBgOver;
+checkboxFg: #b3b3b3;
+sliderBgInactive: #e1eaef;
+sliderBgActive: windowBgActive;
+tooltipBg: #eef2f5;
+tooltipFg: #5d6c80;
+tooltipBorderFg: #c9d1db;
+titleBg: windowBgOver;
+titleShadow: #83949603;
+titleButtonFg: #ababab;
+titleButtonBgOver: #e5e5e5;
+titleButtonFgOver: #9a9a9a;
+titleButtonCloseBgOver: #e81123;
+titleButtonCloseFgOver: windowFgActive;
+titleFgActive: #3e3c3e;
+titleFg: #acacac;
+trayCounterBg: #f23c34;
+trayCounterBgMute: #888888;
+trayCounterFg: #002b36;
+trayCounterBgMacInvert: #002b36;
+trayCounterFgMacInvert: #002b3601;
+layerBg: #8394967f;
+cancelIconFg: menuIconFg;
+cancelIconFgOver: menuIconFgOver;
+boxBg: windowBg;
+boxTextFg: windowFg;
+boxTextFgGood: #4ab44a;
+boxTextFgError: #d84d4d;
+boxTitleFg: #404040;
+boxSearchBg: boxBg;
+boxSearchCancelIconFg: cancelIconFg;
+boxSearchCancelIconFgOver: cancelIconFgOver;
+boxTitleAdditionalFg: #808080;
+boxTitleCloseFg: cancelIconFg;
+boxTitleCloseFgOver: cancelIconFgOver;
+membersAboutLimitFg: windowSubTextFgOver;
+contactsBg: windowBg;
+contactsBgOver: windowBgOver;
+contactsNameFg: boxTextFg;
+contactsStatusFg: windowSubTextFg;
+contactsStatusFgOver: windowSubTextFgOver;
+contactsStatusFgOnline: windowActiveTextFg;
+photoCropFadeBg: layerBg;
+photoCropPointFg: #002b367f;
+introBg: windowBg;
+introTitleFg: windowBoldFg;
+introDescriptionFg: windowSubTextFg;
+introErrorFg: windowSubTextFg;
+introCoverTopBg: #0f89d0;
+introCoverBottomBg: #39b0f0;
+introCoverIconsFg: #5ec6ff;
+introCoverPlaneTrace: #5ec6ff69;
+introCoverPlaneInner: #c6d8e8;
+introCoverPlaneOuter: #a1bed4;
+introCoverPlaneTop: #002b36;
+dialogsMenuIconFg: menuIconFg;
+dialogsMenuIconFgOver: menuIconFgOver;
+dialogsBg: windowBg;
+dialogsNameFg: windowBoldFg;
+dialogsChatIconFg: dialogsNameFg;
+dialogsDateFg: windowSubTextFg;
+dialogsTextFg: windowSubTextFg;
+dialogsTextFgService: windowActiveTextFg;
+dialogsDraftFg: #dd4b39;
+dialogsVerifiedIconBg: windowBgActive;
+dialogsVerifiedIconFg: windowFgActive;
+dialogsSendingIconFg: #c1c1c1;
+dialogsSentIconFg: #5dc452;
+dialogsUnreadBg: windowBgActive;
+dialogsUnreadBgMuted: #bbbbbb;
+dialogsUnreadFg: windowFgActive;
+dialogsBgOver: windowBgOver;
+dialogsNameFgOver: windowBoldFgOver;
+dialogsChatIconFgOver: dialogsNameFgOver;
+dialogsDateFgOver: windowSubTextFgOver;
+dialogsTextFgOver: windowSubTextFgOver;
+dialogsTextFgServiceOver: dialogsTextFgService;
+dialogsDraftFgOver: dialogsDraftFg;
+dialogsVerifiedIconBgOver: dialogsVerifiedIconBg;
+dialogsVerifiedIconFgOver: dialogsVerifiedIconFg;
+dialogsSendingIconFgOver: dialogsSendingIconFg;
+dialogsSentIconFgOver: dialogsSentIconFg;
+dialogsUnreadBgOver: dialogsUnreadBg;
+dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
+dialogsUnreadFgOver: dialogsUnreadFg;
+dialogsBgActive: #2aa198;
+dialogsNameFgActive: windowFgActive;
+dialogsChatIconFgActive: dialogsNameFgActive;
+dialogsDateFgActive: windowFgActive;
+dialogsTextFgActive: windowFgActive;
+dialogsTextFgServiceActive: dialogsTextFgActive;
+dialogsDraftFgActive: #c6e1f7;
+dialogsVerifiedIconBgActive: dialogsTextFgActive;
+dialogsVerifiedIconFgActive: dialogsBgActive;
+dialogsSendingIconFgActive: #002b3699;
+dialogsSentIconFgActive: dialogsTextFgActive;
+dialogsUnreadBgActive: dialogsTextFgActive;
+dialogsUnreadBgMutedActive: dialogsDraftFgActive;
+dialogsUnreadFgActive: dialogsBgActive;
+dialogsForwardBg: dialogsBgActive;
+dialogsForwardFg: dialogsNameFgActive;
+searchedBarBg: windowBgOver;
+searchedBarBorder: shadowFg;
+searchedBarFg: windowSubTextFgOver;
+topBarBg: windowBg;
+emojiPanBg: windowBg;
+emojiPanCategories: #f7f7f7; // windowBg;
+emojiPanHeaderFg: windowSubTextFg;
+emojiPanHeaderBg: #002b36f2; // emojiPanBg;
+stickerPanDeleteBg: #839496cc;
+stickerPanDeleteFg: windowFgActive;
+stickerPreviewBg: #002b36b0;
+historyTextInFg: windowFg;
+historyTextOutFg: windowFg;
+historyCaptionInFg: historyTextInFg;
+historyCaptionOutFg: historyTextOutFg;
+historyFileNameInFg: historyTextInFg;
+historyFileNameOutFg: historyTextOutFg;
+historyOutIconFg: dialogsSentIconFg;
+historyOutIconFgSelected: #4da79f;
+historyIconFgInverted: windowFgActive;
+historySendingOutIconFg: #98d292;
+historySendingInIconFg: #a0adb5;
+historySendingInvertedIconFg: #002b36c8;
+historySystemBg: #89a0b47f;
+historySystemBgSelected: #bbc8d4a2;
+historySystemFg: windowFgActive;
+historyUnreadBarBg: #fcfbfa;
+historyUnreadBarBorder: shadowFg;
+historyUnreadBarFg: #538bb4;
+historyForwardChooseBg: #8394964c;
+historyForwardChooseFg: windowFgActive;
+historyPeer1NameFg: #c03d33;
+historyPeer1UserpicBg: #e17076;
+historyPeer2NameFg: #4fad2d;
+historyPeer2UserpicBg: #7bc862;
+historyPeer3NameFg: #d09306;
+historyPeer3UserpicBg: #e5ca77;
+historyPeer4NameFg: windowActiveTextFg;
+historyPeer4UserpicBg: #65aadd;
+historyPeer5NameFg: #8544d6;
+historyPeer5UserpicBg: #a695e7;
+historyPeer6NameFg: #cd4073;
+historyPeer6UserpicBg: #ee7aae;
+historyPeer7NameFg: #2996ad;
+historyPeer7UserpicBg: #6ec9cb;
+historyPeer8NameFg: #ce671b;
+historyPeer8UserpicBg: #faa774;
+historyPeerUserpicFg: windowFgActive;
+historyScrollBarBg: #517c417a;
+historyScrollBarBgOver: #517c41bc;
+historyScrollBg: #517c414c;
+historyScrollBgOver: #517c416b;
+msgInBg: windowBg;
+msgInBgSelected: #c2dcf2;
+msgOutBg: #effdde;
+msgOutBgSelected: #b7dbdb;
+msgSelectOverlay: #358cd44c;
+msgStickerOverlay: #358cd47f;
+msgInServiceFg: windowActiveTextFg;
+msgInServiceFgSelected: windowActiveTextFg;
+msgOutServiceFg: #3a8e26;
+msgOutServiceFgSelected: #367570;
+msgInShadow: #748ea229;
+msgInShadowSelected: #548dbb29;
+msgOutShadow: #3ac34740;
+msgOutShadowSelected: #37a78e40;
+msgInDateFg: #a0acb6;
+msgInDateFgSelected: #6a9cc5;
+msgOutDateFg: #6cc264;
+msgOutDateFgSelected: #50a79c;
+msgServiceFg: windowFgActive;
+msgServiceBg: #517c417f;
+msgServiceBgSelected: #96b38ba2;
+msgInReplyBarColor: activeLineFg;
+msgInReplyBarSelColor: activeLineFg;
+msgOutReplyBarColor: historyOutIconFg;
+msgOutReplyBarSelColor: historyOutIconFgSelected;
+msgImgReplyBarColor: msgServiceFg;
+msgInMonoFg: #4e7391;
+msgOutMonoFg: #469165;
+msgDateImgFg: msgServiceFg;
+msgDateImgBg: #83949654;
+msgDateImgBgOver: #83949674;
+msgDateImgBgSelected: #1c4a7187;
+msgFileThumbLinkInFg: lightButtonFg;
+msgFileThumbLinkInFgSelected: lightButtonFgOver;
+msgFileThumbLinkOutFg: #5eba5b;
+msgFileThumbLinkOutFgSelected: #31a298;
+msgFileInBg: windowBgActive;
+msgFileInBgOver: #4eade3;
+msgFileInBgSelected: #51a3d3;
+msgFileOutBg: #78c67f;
+msgFileOutBgOver: #6bc272;
+msgFileOutBgSelected: #5fb389;
+msgFile1Bg: #72b1df;
+msgFile1BgDark: #5c9ece;
+msgFile1BgOver: #5294c4;
+msgFile1BgSelected: #5099d0;
+msgFile2Bg: #61b96e;
+msgFile2BgDark: #4da859;
+msgFile2BgOver: #44a050;
+msgFile2BgSelected: #46a07e;
+msgFile3Bg: #e47272;
+msgFile3BgDark: #cd5b5e;
+msgFile3BgOver: #c35154;
+msgFile3BgSelected: #9f6a82;
+msgFile4Bg: #efc274;
+msgFile4BgDark: #e6a561;
+msgFile4BgOver: #dc9c5a;
+msgFile4BgSelected: #b19d84;
+historyFileInIconFg: msgInBg;
+historyFileInIconFgSelected: msgInBgSelected;
+historyFileInRadialFg: historyFileInIconFg;
+historyFileInRadialFgSelected: historyFileInIconFgSelected;
+historyFileOutIconFg: msgOutBg;
+historyFileOutIconFgSelected: msgOutBgSelected;
+historyFileOutRadialFg: historyFileOutIconFg;
+historyFileOutRadialFgSelected: historyFileOutIconFgSelected;
+historyFileThumbIconFg: msgInBg;
+historyFileThumbIconFgSelected: msgInBgSelected;
+historyFileThumbRadialFg: historyFileThumbIconFg;
+historyFileThumbRadialFgSelected: historyFileThumbIconFgSelected;
+msgWaveformInActive: windowBgActive;
+msgWaveformInActiveSelected: #51a3d3;
+msgWaveformInInactive: #d4dee6;
+msgWaveformInInactiveSelected: #9cc1e1;
+msgWaveformOutActive: #78c67f;
+msgWaveformOutActiveSelected: #6badad;
+msgWaveformOutInactive: #b3e2b4;
+msgWaveformOutInactiveSelected: #91c3c3;
+msgBotKbOverBgAdd: #002b3620;
+msgBotKbIconFg: msgServiceFg;
+msgBotKbRippleBg: #83949620;
+mediaInFg: msgInDateFg;
+mediaInFgSelected: msgInDateFgSelected;
+mediaOutFg: msgOutDateFg;
+mediaOutFgSelected: msgOutDateFgSelected;
+youtubePlayIconBg: #e83131c8;
+youtubePlayIconFg: windowFgActive;
+videoPlayIconBg: #8394967f;
+videoPlayIconFg: #002b36;
+toastBg: #839496b2;
+toastFg: windowFgActive;
+reportSpamBg: emojiPanHeaderBg;
+reportSpamFg: windowFg;
+historyToDownShadow: #83949640;
+historyComposeAreaBg: msgInBg;
+historyComposeAreaFg: historyTextInFg;
+historyComposeAreaFgService: msgInDateFg;
+historyComposeIconFg: menuIconFg;
+historyComposeIconFgOver: menuIconFgOver;
+historySendIconFg: windowBgActive;
+historySendIconFgOver: windowBgActive;
+historyPinnedBg: historyComposeAreaBg;
+historyReplyBg: historyComposeAreaBg;
+historyReplyIconFg: windowBgActive;
+historyReplyCancelFg: cancelIconFg;
+historyReplyCancelFgOver: cancelIconFgOver;
+historyComposeButtonBg: historyComposeAreaBg;
+historyComposeButtonBgOver: windowBgOver;
+historyComposeButtonBgRipple: windowBgRipple;
+overviewCheckBg: #83949640;
+overviewCheckFg: windowBg;
+overviewCheckFgActive: windowBg;
+overviewPhotoSelectOverlay: #40ace333;
+profileStatusFgOver: #7c99b2;
+profileVerifiedCheckBg: windowBgActive;
+profileVerifiedCheckFg: windowFgActive;
+notificationsBoxMonitorFg: windowFg;
+notificationsBoxScreenBg: dialogsBgActive;
+notificationSampleUserpicFg: windowBgActive;
+notificationSampleCloseFg: #d7d7d7; // windowSubTextFg;
+notificationSampleTextFg: #d7d7d7; // windowSubTextFg;
+notificationSampleNameFg: #939393; // windowSubTextFg;
+mainMenuBg: windowBg;
+mainMenuCoverBg: dialogsBgActive;
+mainMenuCoverFg: windowFgActive;
+mediaPlayerBg: windowBg;
+mediaPlayerActiveFg: windowBgActive;
+mediaPlayerInactiveFg: sliderBgInactive;
+mediaPlayerDisabledFg: #9dd1ef;
+mediaviewFileBg: windowBg;
+mediaviewFileNameFg: windowFg;
+mediaviewFileSizeFg: windowSubTextFg;
+mediaviewFileRedCornerFg: #d55959;
+mediaviewFileYellowCornerFg: #e8a659;
+mediaviewFileGreenCornerFg: #49a957;
+mediaviewFileBlueCornerFg: #599dcf;
+mediaviewFileExtFg: activeButtonFg;
+mediaviewMenuBg: #383838;
+mediaviewMenuBgOver: #505050;
+mediaviewMenuBgRipple: #676767;
+mediaviewMenuFg: windowFgActive;
+mediaviewBg: #93a1a1eb;
+mediaviewVideoBg: imageBg;
+mediaviewControlBg: #8394963c;
+mediaviewControlFg: windowFgActive;
+mediaviewCaptionBg: #11111180;
+mediaviewCaptionFg: mediaviewControlFg;
+mediaviewTextLinkFg: #91d9ff;
+mediaviewSaveMsgBg: toastBg;
+mediaviewSaveMsgFg: toastFg;
+mediaviewPlaybackActive: #c7c7c7;
+mediaviewPlaybackInactive: #252525;
+mediaviewPlaybackActiveOver: #002b36;
+mediaviewPlaybackInactiveOver: #474747;
+mediaviewPlaybackProgressFg: #002b36c7;
+mediaviewPlaybackIconFg: mediaviewPlaybackActive;
+mediaviewPlaybackIconFgOver: mediaviewPlaybackActiveOver;
+mediaviewTransparentBg: #002b36;
+mediaviewTransparentFg: #cccccc;
+notificationBg: windowBg;
