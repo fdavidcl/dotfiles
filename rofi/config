@@ -1,0 +1,129 @@
+! Enabled modi
+rofi.modi:                           window,run,ssh
+
+! Window opacity
+rofi.opacity:                        0
+
+! Window width
+rofi.width:                          50
+
+! Number of lines
+rofi.lines:                          16
+
+! Number of columns
+rofi.columns:                        1
+
+
+! Foreground color
+rofi.fg:                             fg
+! Background color
+rofi.bg:                             bg
+! Foreground color for active row
+rofi.fg-active:                      bg
+! Foreground color for urgent row
+rofi.fg-urgent:                      red1
+! Foreground color for highlighted active row
+rofi.hlfg-active:                    bg
+! Foreground color for highlighted urgent row
+rofi.hlfg-urgent:                    red1
+! Background color for active row
+rofi.bg-active:                      fg
+! Background color for urgent row
+rofi.bg-urgent:                      fg
+! Background color for highlighted active row
+rofi.hlbg-active:                    bg
+! Background color for highlighted urgent row
+rofi.hlbg-urgent:                    red1
+! Background color for alternating row
+rofi.bgalt:                          bg
+! Foreground color for highlighted row
+rofi.hlfg:                           bg
+! Background color for highlighted row
+rofi.hlbg:                           fg
+! Border color
+rofi.bc:                             magenta5
+! Use extended color scheme (bg, border, color, separator, color)
+rofi.color-enabled: true
+rofi.color-window: #002b36, #073642, #839496
+! background, foreground, background alt, highlight background, highlight foreground
+rofi.color-normal: #002b36, #839496, #002b36, #2aa198, #002b36
+rofi.color-active: #002b36, #859900, #002b36, #859900, #002b36
+rofi.color-urgent: #002b36, #d33682, #002b36, #d33682, #002b36
+
+rofi.font: Source Code Pro 24
+
+! Border width
+rofi.bw:                             1
+
+! Location on screen
+rofi.location:                       6
+
+! Padding
+rofi.padding:                        16
+
+! Y-offset relative to location
+rofi.yoffset:                        0
+
+! X-offset relative to location
+rofi.xoffset:                        0
+
+! Always show number of lines 
+rofi.fixed-num-lines:                false
+
+! Terminal to use
+rofi.terminal:                       xfce4-terminal
+
+! Ssh client to use
+! rofi.ssh-client:                     ssh
+! Ssh command to execute
+! rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+! Run command to execute
+rofi.run-command:                    {cmd}
+! Command to get extra run targets
+! rofi.run-list-command:               
+! Run command to execute that runs in shell
+rofi.run-shell-command:              {terminal} -e {cmd}
+! Disable history in run/ssh
+! rofi.disable-history:                false
+! Use levenshtein sorting
+! rofi.levenshtein-sort:               false
+! Set case-sensitivity
+! rofi.case-sensitive:                 false
+! Enable sidebar-mode
+! rofi.sidebar-mode:                   false
+! Set lazy filter limit
+! rofi.lazy-filter-limit:              15000
+! Row height (in chars)
+! rofi.eh:                             2
+
+! Enable auto select mode       
+rofi.auto-select:                    true
+! Parse hosts file for ssh mode
+! rofi.parse-hosts:                    false
+! Parse known_hosts file for ssh mode
+! rofi.parse-known-hosts:              true
+! Set the modi to combine in combi mode
+! rofi.combi-modi:                     window,run
+! Do a more fuzzy matching
+! rofi.fuzzy:                          true
+! Use glob matching
+! rofi.glob:                           false
+! Tokenize input string
+! rofi.tokenize:                       true
+
+! Monitor id to show on
+rofi.m:                              -1
+! Margin between rows
+rofi.line-margin:                    0
+rofi.line-padding:                   8
+! Pre-set filter
+! rofi.filter:                         
+
+! Separator style (none, dash, solid)
+rofi.separator-style:                none
+
+! Hide scroll-bar
+rofi.hide-scrollbar:                 true
+! Show markup
+!rofi.markup-rows:                    false
+! Fulls
