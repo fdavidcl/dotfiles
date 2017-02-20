@@ -64,13 +64,14 @@
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(nyan-mode nil)
  '(nyan-wavy-trail nil)
+ '(org-support-shift-select t)
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "https://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (column-marker haskell-mode haml-mode drag-stuff ess ess-R-data-view ess-R-object-popup ess-smart-equals ess-smart-underscore pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
+    (org-babel-eval-in-repl ox-reveal ob-ipython org-beautify-theme org-bullets org-gnome column-marker haskell-mode haml-mode drag-stuff ess ess-R-data-view ess-R-object-popup ess-smart-equals ess-smart-underscore pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
  '(paradox-automatically-star nil)
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
@@ -128,3 +129,9 @@
     (lambda ()
       (interactive)
       (other-window -1)))
+
+(require 'iso-transl)
+
+ (add-hook 'text-mode-hook 'visual-line-mode)
+ (add-hook 'text-mode-hook 'org-bullets-mode)
+ (add-hook 'text-mode-hook 'org-indent-mode)
