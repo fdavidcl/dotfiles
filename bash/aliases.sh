@@ -5,7 +5,7 @@
 # Prompt customization (http://bashrcgenerator.com/)
 #export PS1="\[\e[00;37m\]\u@\h \[\e[0m\]\[\e[00;36m\][\W]\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
 export PS1="\[\033[38;5;10m\]\u@\h:\[$(tput sgr0)\]\[\033[38;5;6m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
-export PS1="\u@\h:\[\033[38;5;6m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1='$([[ $? -eq 0 ]] || echo $?\|)\u@\h:\[\033[38;5;6m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]'
 
 export PATH=$HOME/.local/bin:$PATH
 
