@@ -1,0 +1,142 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.6,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.2,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 964,
+                       "width": 1468,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Terminal",
+                    "percent": 0.2,
+                    "swallows": [
+                       {
+                        "class": "^Xfce4\\-terminal$",
+                        "instance": "^xfce4\\-terminal$",
+                        "title": "^Terminal$",
+                        "transient_for": "^$"
+//                        "window_role": "^xfce4\\-terminal\\-1487900064\\-1684246723$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 964,
+                       "width": 1468,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Terminal",
+                    "percent": 0.8,
+                    "swallows": [
+                       {
+                        "class": "^Xfce4\\-terminal$",
+                        "instance": "^xfce4\\-terminal$",
+                        "title": "^Terminal$",
+                        "transient_for": "^$"
+//                        "window_role": "^xfce4\\-terminal\\-1487899245\\-32452464$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 964,
+               "width": 1468,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Terminal",
+            "percent": 0.8,
+            "swallows": [
+               {
+                "class": "^Xfce4\\-terminal$",
+                "instance": "^xfce4\\-terminal$",
+                "title": "^Terminal$",
+                "transient_for": "^$"
+//                "window_role": "^xfce4\\-terminal\\-1487900069\\-36061853$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.4,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 2504,
+               "width": 2784,
+               "x": 0,
+               "y": 0
+            },
+            "name": "emacs@shaula",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Emacs$",
+                "instance": "^emacs$",
+                "title": "^emacs\\@shaula$",
+                "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 964,
+               "width": 1468,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Terminal",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Xfce4\\-terminal$",
+                "instance": "^xfce4\\-terminal$",
+                "title": "^Terminal$",
+                "transient_for": "^$"
+//                "window_role": "^xfce4\\-terminal\\-1487900123\\-\\-1765795588$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}

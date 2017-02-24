@@ -10,7 +10,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Custom wallpaper
-set $wallpaper /media/datos/Pictures/lorca.jpg
+# set $wallpaper /media/datos/Pictures/lorca.jpg
+set $wallpaper /media/datos/Pictures/Wallpapers/4k/destination_4k.jpg
 
 # Solarized color palette
 set $base03    #002b36
@@ -107,6 +108,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
+workspace_auto_back_and_forth yes
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -117,6 +119,8 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym F12 workspace dashboard
+bindsym $mod+F12 exec ~/.i3/load_dashboard.sh
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 
@@ -173,6 +177,7 @@ bar {
         status_command i3status -c ~/.i3/i3status.conf
         font pango:Source Code Pro, FontAwesome 10
         separator_symbol " "
+        tray_padding 0
 
         colors {
 		background $bg-color$opacity
@@ -215,9 +220,9 @@ bindsym $mod+space exec rofi -show drun -c ~/.i3/rofi/rofi.conf
 exec_always feh --bg-fill $wallpaper
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 10%+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
  #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 10%- #decrease sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle # mute sound
 
 # Sreen brightness controls
