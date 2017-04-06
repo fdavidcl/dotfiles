@@ -1,0 +1,100 @@
+#+TITLE: Emacs configuration
+#+AUTHOR: David Charte
+
+* References
+
+Other emacs configuration files are a huge inspiration for this one, mainly [[https://github.com/M42/.emacs.d][M42's]] and [[https://github.com/andreshp/.emacs.d/][andreshp's]].
+
+* Initializations
+
+** Support for accented characters
+
+#+BEGIN_SRC emacs-lisp
+(require 'iso-transl)
+#+END_SRC
+
+** Default to always install required packages
+
+#+BEGIN_SRC emacs-lisp
+(setq use-package-always-ensure t)
+#+END_SRC
+
+* Additional keybindings
+
+#+BEGIN_SRC emacs-lisp
+;(global-set-key [f8] 'neotree-toggle)
+(global-set-key (kbd "<f5>") 'magit-status)
+(global-set-key [f12] 'ess-eval-region-or-line-and-step)
+;(global-set-key (kbd "C-x C-a") 'mark-whole-buffer)
+#+END_SRC
+
+** Switch buffers with Ctrl+Tab
+
+#+BEGIN_SRC emacs-lisp
+;; Switch buffers with ctrl-tab
+(global-set-key [C-tab] 'other-window)
+(global-set-key [C-iso-lefttab] 
+    (lambda ()
+      (interactive)
+      (other-window -1)))
+#+END_SRC
+
+* Emacs for lazy people
+
+** Smex
+
+[[https://github.com/nonsequitur/smex/][smex]] is a M-x enhancement for Emacs, built on top of Ido.
+
+#+BEGIN_SRC emacs-lisp
+(require 'smex)
+(smex-initialize)
+#+END_SRC
+
+** Ergoemacs
+
+[[https://ergoemacs.github.io/index.html][ergoemacs-mode]] is a minor-mode that sets ergonomic and well-known keybindings for common editing functions, with the aim of reducing repetitive strain injury (RSI) as well as adding some familiarity to the use of emacs.
+
+#+BEGIN_SRC emacs-lisp
+(setq ergoemacs-theme nil)
+(setq ergoemacs-keyboard-layout "es")
+(require 'ergoemacs-mode)
+(ergoemacs-mode 1)
+#+END_SRC
+
+** Which-key
+
+[[https://github.com/justbur/emacs-which-key][which-key]] displays the key bindings following your currently entered incomplete command.
+
+#+BEGIN_SRC emacs-lisp
+(which-key-mode)
+#+END_SRC
+
+** Auto-reload stuff
+
+Automatically reload files from disk when changed (source: [[http://pragmaticemacs.com/emacs/automatically-revert-buffers/][Pragmatic Emacs]]). Also refresh dired when directory changes.
+
+#+BEGIN_SRC emacs-lisp
+(global-auto-revert-mode 1)
+(add-hook 'dired-mode-hook 'auto-revert-mode)
+#+END_SRC
+
+* Snippets
+
+** Yasnippet
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+#+END_SRC
+
+* Org mode
+
+** Additions
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'text-mode-hook 'visual-line-mode)
+(add-hook 'text-mode-hook 'org-bullets-mode)
+(add-hook 'text-mode-hook 'org-indent-mode)
+#+END_SRC
