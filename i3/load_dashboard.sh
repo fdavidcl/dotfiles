@@ -21,6 +21,6 @@ sleep 0.25
 sleep 0.25
 (xfce4-terminal --hide-scrollbar -e 'bash -c "wttr;read"' &)
 sleep 0.25
-(emacsclient -c ~/notes.org &)
+(emacsclient -c ~/Sync/notes.org &)
 sleep 0.25
 (xfce4-terminal --hide-scrollbar -e 'bash -c "neofetch;read"' &)
