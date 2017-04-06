@@ -70,6 +70,7 @@ alias p='ping t.co'
 alias hs='ghci'
 alias ..='cd ..'
 alias e=$EDITOR
+alias ee='emacsclient -c'
 alias g='git'
 alias r='irb'
 alias y='python'
@@ -150,4 +151,4 @@ export EDITOR=micro
 alias nano=micro # I keep launching nano by mistake
 
 uptime
-(which task >> /dev/null) && task next
+# (which task >> /dev/null) && task next
