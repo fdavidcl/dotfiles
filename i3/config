@@ -102,9 +102,9 @@ bindsym $mod+v split v
 # bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+F1 layout stacking
-bindsym $mod+F2 layout tabbed
-bindsym $mod+F3 layout toggle split
+bindsym $mod+F10 layout stacking
+bindsym $mod+F11 layout tabbed
+bindsym $mod+F12 layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -130,6 +130,15 @@ set $w8 "8: 8 "
 set $w9 "9:  "
 set $w10 "10:  "
 set $dash "0:  "
+set $w11 "11: F1 "
+set $w12 "12: F2 "
+set $w13 "13: F3 "
+set $w14 "14: F4 "
+set $w15 "15: F5 "
+set $w16 "16: F6 "
+set $w17 "17: F7 "
+set $w18 "18: F8 "
+set $w19 "19: F9 "
 
 # switch to workspace
 workspace_auto_back_and_forth yes
@@ -143,8 +152,17 @@ bindsym $mod+7 workspace $w7
 bindsym $mod+8 workspace $w8
 bindsym $mod+9 workspace $w9
 bindsym $mod+0 workspace $w10
-# bindsym F12 workspace $dash
-bindsym $mod+F12 exec ~/.i3/load_dashboard.sh $dash
+
+bindsym $mod+F1 workspace $w11
+bindsym $mod+F2 workspace $w12
+bindsym $mod+F3 workspace $w13
+bindsym $mod+F4 workspace $w14
+bindsym $mod+F5 workspace $w15
+bindsym $mod+F6 workspace $w16
+bindsym $mod+F7 workspace $w17
+bindsym $mod+F8 workspace $w18
+bindsym $mod+F9 workspace $w19
+# bindsym $mod+F12 exec ~/.i3/load_dashboard.sh $dash
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
@@ -159,6 +177,15 @@ bindsym $mod+Shift+7 move container to workspace $w7
 bindsym $mod+Shift+8 move container to workspace $w8
 bindsym $mod+Shift+9 move container to workspace $w9
 bindsym $mod+Shift+0 move container to workspace $w10
+bindsym $mod+Shift+F1 move container to workspace $w11
+bindsym $mod+Shift+F2 move container to workspace $w12
+bindsym $mod+Shift+F3 move container to workspace $w13
+bindsym $mod+Shift+F4 move container to workspace $w14
+bindsym $mod+Shift+F5 move container to workspace $w15
+bindsym $mod+Shift+F6 move container to workspace $w16
+bindsym $mod+Shift+F7 move container to workspace $w17
+bindsym $mod+Shift+F8 move container to workspace $w18
+bindsym $mod+Shift+F9 move container to workspace $w19
 
 assign [class="^Firefox$"] $w1
 assign [class="^Clementine$"] $w9
@@ -232,8 +259,8 @@ client.urgent $urgent-bg-color $urgent-bg-color $text-color #00ff00
 
 
 # exec gnome-settings-daemon to launch
-exec /usr/lib64/gnome-settings-daemon/gnome-settings-daemon
 exec xrandr --dpi 180
+exec /usr/lib/gnome-settings-daemon/gsd-xsettings
 
 # disable system bell (beep)
 exec_always xset -b
@@ -305,15 +332,15 @@ mode "$mode_system" {
 bindsym $mod+Escape mode "$mode_system"
 
 # multimonitor setup
-set $hdmi "11: hdmi "
-workspace $hdmi output HDMI-1
-bindsym $mod+F7 workspace --no-auto-back-and-forth $hdmi
-bindsym $mod+Shift+F7 move container to workspace $hdmi
+# set $hdmi "11: hdmi "
+# workspace $hdmi output HDMI-1
+# bindsym $mod+F7 workspace --no-auto-back-and-forth $hdmi
+# bindsym $mod+Shift+F7 move container to workspace $hdmi
 
-set $dp "12: dp "
-workspace $dp output DP-1
-bindsym $mod+F8 workspace --no-auto-back-and-forth $dp
-bindsym $mod+Shift+F8 move container to workspace $dp
+# set $dp "12: dp "
+# workspace $dp output DP-1
+# bindsym $mod+F8 workspace --no-auto-back-and-forth $dp
+# bindsym $mod+Shift+F8 move container to workspace $dp
 
 # notes workspace
 bindsym $mod+n exec "i3-msg 'workspace org'; emacsclient -c /media/datos/Sync/notes.org"
