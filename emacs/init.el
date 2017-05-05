@@ -25,11 +25,6 @@
    ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#657b83"])
  '(blink-cursor-mode t)
  '(compilation-message-face (quote default))
- ;; '(cua-global-mark-cursor-color "#2aa198")
- ;; '(cua-mode nil nil (cua-base))
- ;; '(cua-normal-cursor-color "#839496")
- ;; '(cua-overwrite-cursor-color "#b58900")
- ;; '(cua-read-only-cursor-color "#859900")
  '(custom-enabled-themes (quote (ample-flat)))
  '(custom-safe-themes
    (quote
@@ -81,7 +76,7 @@
      ("melpa" . "https://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (use-package which-key smex ergoemacs-mode ergoemacs-status org-capture-pop-frame color-theme color-theme-sanityinc-tomorrow abyss-theme ample-theme fish-mode sass-mode ox-impress-js org-babel-eval-in-repl ox-reveal ob-ipython org-beautify-theme org-bullets org-gnome column-marker haskell-mode haml-mode drag-stuff ess ess-R-data-view ess-R-object-popup ess-smart-equals ess-smart-underscore pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
+    (org-ref cdlatex use-package which-key smex ergoemacs-mode ergoemacs-status org-capture-pop-frame color-theme color-theme-sanityinc-tomorrow abyss-theme ample-theme fish-mode sass-mode ox-impress-js org-babel-eval-in-repl ox-reveal ob-ipython org-beautify-theme org-bullets org-gnome column-marker haskell-mode haml-mode drag-stuff ess ess-R-data-view ess-R-object-popup ess-smart-equals ess-smart-underscore pandoc-mode yaml-mode ruby-end fuzzy subatomic-theme powerline paper-theme paradox inf-ruby clippy atom-one-dark-theme latex-extra magithub material-theme flymd jekyll-modes markdown-mode markdown-mode+ markdown-preview-mode neotree magic-latex-buffer magit multi-term nyan-mode solarized-theme org)))
  '(paradox-automatically-star nil)
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
