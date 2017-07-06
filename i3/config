@@ -21,30 +21,24 @@ set $wallpaper /media/datos/Pictures/Wallpapers/scorpio.jpg
 # Terminal
 set $TERMINAL xfce4-terminal
 
-# Solarized color palette
-set $base03    #002b36
-set $base02    #073642
-set $base01    #586e75
-set $base00    #657b83
-set $base0     #839496
-set $base1     #93a1a1
-set $base2     #eee8d5
-set $base3     #fdf6e3
-set $yellow    #b58900
-set $orange    #cb4b16
-set $red       #dc322f
-set $magenta   #d33682
-set $violet    #6c71c4
-set $blue      #268bd2
-set $cyan      #2aa198
-set $green     #859900
+set $base00 #151515
+set $base01 #202020
+set $base02 #303030
+set $base03 #505050
+set $base04 #b0b0b0
+set $base05 #d0d0d0
+set $base06 #e0e0e0
+set $base07 #f5f5f5
+set $base08 #fb9fb1
+set $base09 #eda987
+set $base0A #ddb26f
+set $base0B #acc267
+set $base0C #12cfc0
+set $base0D #6fc2ef
+set $base0E #e1a3ee
+set $base0F #deaf8f
 
 # Colors
-set $bg-color 	         #002b36
-set $inactive-bg-color   #002b36
-set $text-color          #839496
-set $inactive-text-color #93a1a1
-set $urgent-bg-color     #d33682
 set $opacity             00
 
 set $mod Mod4
@@ -72,14 +66,14 @@ bindsym $mod+Return exec xfce4-terminal
 # start an editor
 bindsym $mod+e exec emacsclient -c /media/datos/Documents
 # start a file manager
-bindsym $mod+f exec nautilus /media/datos/
+bindsym $mod+f exec nautilus
 
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym Mod1+F4 kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary
+# bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --display-binary
 
 # change focus
 bindsym $mod+Left focus left
@@ -230,38 +224,40 @@ bar {
         i3bar_command i3bar -t
 #       mode hide
         position top
-        status_command i3status -c ~/.i3/i3status.conf | /home/fdavidcl/.rvm/rubies/ruby-2.3.3/bin/ruby ~/.i3/status_title.rb
+        status_command i3status -c ~/.config/i3/i3status.conf
         font pango:Noto Sans, FontAwesome 10
         separator_symbol " "
         tray_padding 0
         strip_workspace_numbers yes
 
-        colors {
-		background $bg-color$opacity
-#                text #000000
-                statusline $base3
-	    	separator #75757500
-		#                  border             background         text
-		focused_workspace  $blue              $blue              $bg-color
-		inactive_workspace $bg-color$opacity  $bg-color$opacity  $base3
-		urgent_workspace   $orange            $orange            $bg-color
-                binding_mode       $cyan              $cyan              $bg-color
-        }
+    colors {
+        background $base00
+        separator  $base01
+        statusline $base04
+
+        # State             Border  BG      Text
+        focused_workspace   $base05 $base0C $base00
+        active_workspace    $base05 $base03 $base00
+        inactive_workspace  $base03 $base01 $base05
+        urgent_workspace    $base08 $base08 $base00
+        binding_mode        $base00 $base0A $base00
+}
 }
 
 # exec --no-startup-id xfce4-panel --disable-wm-check
 
-# window colors
-#                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent $urgent-bg-color $urgent-bg-color $text-color #00ff00
-
+# Basic color configuration using the Base16 variables for windows and borders.
+# Property Name         Border  BG      Text    Indicator Child Border
+client.focused          $base05 $base0D $base00 $base0D $base03
+client.focused_inactive $base01 $base01 $base05 $base03 $base01
+client.unfocused        $base01 $base00 $base05 $base01 $base01
+client.urgent           $base08 $base08 $base00 $base08 $base08
+client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.background $base07
 
 # exec gnome-settings-daemon to launch
-exec xrandr --dpi 180
 exec /usr/lib/gnome-settings-daemon/gsd-xsettings
+exec_always xrandr --dpi 180
 
 # disable system bell (beep)
 exec_always xset -b
@@ -272,8 +268,8 @@ exec_always xinput set-prop 13 282 1 # enables tapping
 exec_always xinput set-prop 13 292 1 # enables natural scrolling
 
 # rofi launcher
-bindsym Mod1+Tab exec rofi -show window -c ~/.i3/rofi/rofi.conf
-bindsym $mod+space exec rofi -show drun -c ~/.i3/rofi/rofi.conf
+bindsym Mod1+Tab exec rofi -show window -c ~/.config/rofi/config
+bindsym $mod+space exec rofi -show drun -c ~/.config/rofi/config
 
 # wallpaper
 exec_always feh --bg-fill "$wallpaper"
@@ -294,7 +290,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # i3-gaps
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 gaps inner 16
 gaps outer 0
 smart_gaps on
