@@ -35,14 +35,6 @@ Other emacs configuration files are a huge inspiration for this one, mainly [[ht
 (setq scroll-preserve-screen-position t)
 #+END_SRC
 
-
-** Theming
-#+BEGIN_SRC emacs-lisp
-(use-package base16-theme
-  :ensure t
-  :config
-  (load-theme 'base16-chalk t))
-#+END_SRC
 * Emacs for lazy people
 
 Emacs is one of the most powerful, extensible editors out there. However, learning to use it is not an easy task, and I'm just really lazy. The following are some packages that I hope will make your life way easier. And if you already use Emacs, I encourage you to try them and see if they help you get a more comfortable development environment.
