@@ -1,0 +1,21 @@
+
+;; ----- smex-history -----
+(
+ eval-region
+ package-list-packages
+ comment-region
+ org-toggle-latex-fragment
+ org-version
+ toggle-word-wrap
+ R
+)
+
+;; ----- smex-data -----
+(
+ (toggle-word-wrap . 2)
+ (org-version . 1)
+ (org-toggle-latex-fragment . 1)
+ (comment-region . 2)
+ (package-list-packages . 1)
+ (eval-region . 2)
+)

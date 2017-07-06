@@ -1,0 +1,207 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/fdavidcl/.i3/" . "lemonbar/")
+ ("/home/fdavidcl/.config/" . "rofi/")
+ ("/media/datos/Documents/interferencias/interferencias.github.io/assets/" . "stylesheets/")
+ ("/media/datos/Documents/interferencias/interferencias.github.io/" . "_posts/")
+ ("/home/fdavidcl/1/CPD/p4/vm/" . "vagrant-spark/")
+ ("/home/fdavidcl/1/CPD/p4/" . "vm/")
+ ("/home/fdavidcl/1/CPD/" . "p4/")
+ ("/home/fdavidcl/1/" . "CPD/")
+ ("/media/datos/Documents/Github/misc-problems/hackerrank/ruby/" . "methods/")
+ ("/media/datos/Documents/Github/misc-problems/hackerrank/" . "ruby/")
+ ("/media/datos/Documents/Universidad/TFG/dlvisr/" . "R/")
+ ("/media/datos/Documents/Universidad/TFG/" . "dlvisr/")
+ ("/media/datos/Documents/Universidad/" . "TFG/")
+ ("/media/datos/Documents/" . "libreim/")
+ ("/media/datos/" . "Documents/")
+ ("/media/" . "datos/")
+ ("/" . "media/")
+ ("/media/datos/Documents/crystal/sample/src/" . "sample/")
+ ("/media/datos/Documents/crystal/sample/" . "src/")
+ ("/media/datos/Documents/libreim/apuntesDGIIM/" . "Estructura de datos/")
+ ("/media/datos/Documents/libreim/" . "apuntesDGIIM/")
+ ("/media/datos/Documents/Seminarios/26 minis-im/" . "tutorials/")
+ ("/media/datos/Documents/Github/simple_validate/lib/" . "simple_validate/")
+ ("/media/datos/Documents/Github/simple_validate/spec/" . "simple_validate/")
+ ("/media/datos/Documents/Github/simple_validate/" . "spec/")
+ ("/home/fdavidcl/" . ".config/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/fdavidcl/.config/rofi/"
+ "/home/fdavidcl/.i3/rofi/"
+ "/home/fdavidcl/.i3/"
+ "/home/fdavidcl/.i3/lemonbar/"
+ "/home/fdavidcl/.config/i3/"
+ "/media/datos/Documents/libreim/apuntesDGIIM/"
+ "/media/datos/Documents/Projects/cosmere/"
+ "/home/fdavidcl/.emacs.d/"
+ "/media/datos/Documents/interferencias/interferencias.github.io/_posts/"
+ "/media/datos/Documents/interferencias/interferencias.github.io/_layouts/"
+ "/media/datos/Documents/interferencias/interferencias.github.io/"
+ "/media/datos/Documents/interferencias/interferencias.github.io/assets/stylesheets/"
+ "/media/datos/Documents/Universidad/5/1/IN/p1/"
+ "/home/fdavidcl/emacs.d/"
+ "/media/datos/Documents/libreim/hackblog/"
+ "/home/fdavidcl/1/CPD/p4/vm/vagrant-spark/"
+ "/media/datos/Documents/Universidad/5/1/CPD/p4/vm/vagrant-spark/"
+ "/media/datos/Documents/Github/misc-problems/hackerrank/ruby/methods/"
+ "/media/datos/Documents/Github/misc-problems/"
+ "/media/datos/Documents/Universidad/TFG/dlvisr/R/"
+ "/media/datos/Documents/Universidad/TFG/udar/"
+ "/media/datos/Documents/crystal/sample/"
+ "/media/datos/Documents/crystal/sample/src/"
+ "/media/datos/Documents/libreim/fdavidcl_apuntes/"
+ "/media/datos/Documents/libreim/apuntesDGIIM/Estructura de datos/"
+ "/media/datos/Documents/libreim/"
+ "/media/datos/Documents/Seminarios/26 minis-im/"
+ "/media/datos/Documents/Github/hacktoberfest-dcoy/"
+ "/media/datos/Documents/Seminarios/26 minis-im/tutorials/"
+ "/home/fdavidcl/"
+ "/media/datos/Documents/Seminarios/26 minis-im/demos/"
+ "/media/datos/Documents/Github/simple_validate/lib/simple_validate/"
+ "/media/datos/Documents/Github/simple_validate/spec/simple_validate/"
+ "/media/datos/Documents/Github/simple_validate/lib/"
+ "/home/fdavidcl/sandbox/test/"
+ "/home/fdavidcl/sandbox/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "config"
+ "rofi.conf"
+ "i3status.conf"
+ "i3_lemonbar_config"
+ "i3_lemonbar_parser.sh"
+ "lemonbar.sh"
+ "rake_helpers.rb"
+ "index.md"
+ "init.el"
+ "2016-11-19-what-about-privacy.md"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/fdavidcl/.config/rofi/" (22696 44458 772817 352000) "../" "./" "config")
+
+ ("/home/fdavidcl/.config/" (22696 44455 239505 37000) "xfce4/" "gedit/" "enchant/" "libinput-gestures.conf" "synapse/" "autostart/" "qt5ct/" "transmission/" "goa-1.0/" "pulse/" "gconf/" "../" "chromium/" "rofi/" "Popcorn-Time/" "Clementine/" "gnome-control-center/" "micro/" "systemd/" "gtk-2.0/" "user-dirs.locale" "Trolltech.conf" "i3/" "eog/" "./" ".composite_enabled" "user-dirs.dirs" "dconf/" "tint2/" "ibus/" "gesturesmanger.json" "Turtl/" "gtk-3.0/" "turtl/" "kritarc" "evolution/" "compton.conf" "RStudio/" "mimeapps.list" "nautilus/" "QtProject.conf" "emaildefaults" "dleyna-renderer-service.conf" "plank/" "fontconfig/" "gnome-session/")
+
+ ("/home/fdavidcl/" (22696 38344 757584 956000) ".Rhistory" ".emacs.d/" ".adobe/" ".taskrc" ".config/" "Descargas/" ".rstudio-desktop/" ".gem/" "Escritorio/" "test.rb" ".bash_logout" "Público/" ".bashrc" "1/" "Documentos/" ".bash_history" ".macromedia/" "../" ".gnupg/" ".i3/" ".dontpanic/" ".mozilla/" ".lesshst" ".xsession-errors" "./" ".fehbg" ".esd_auth" ".zshrc" ".task/" ".oh-my-git/" ".npm/" ".profile" ".ICEauthority" ".password-store/" ".xsession-errors.old" "Música/" ".xscreensaver" ".eduroam/" "2/" ".Xauthority" ".zlogin" "R/" ".ssh/" ".thunderbird/" ".bash_aliases" ".local/" ".cache/" ".mkshrc" "Plantillas/" ".dmrc" ".bash_spells" ".gitconfig" ".rvm/" ".bash_profile" ".bundle/" ".pki/" "Imágenes/" "Vídeos/")
+
+ ("/home/fdavidcl/.i3/" (22696 44455 239505 37000) "i3status.conf~" "../" "i3blocks.conf" "lemonbar/" "./" "config" "i3status.conf" "config~")
+
+ ("/home/fdavidcl/.i3/rofi/" (22696 43929 189321 950000) "../" "rofi.conf" "./")
+
+ ("/home/fdavidcl/.i3/lemonbar/" (22696 39529 482008 98000) "i3_lemonbar_config" "lemonbar.sh~" "../" "./" "i3_lemonbar_config~" "i3_lemonbar_conky" "i3_workspaces.py" "lemonbar.sh" "i3_workspaces.pl" "i3_lemonbar_parser.sh")
+
+ ("/home/fdavidcl/.config/i3/" (22696 29511 276736 443000) "../" "config.default" "./" "config" "i3status.conf" "config~")
+
+ ("/media/datos/Documents/libreim/" (22613 11637 71667 600000) "tuxsites/" "tux-blog/" "tutorials/" "telegram-twitter-forwarder-bot/" "sites/" "Seminarios/" "Rakefile" "problemas/" "plantilla_cartel2.png" "plantilla_cartel2.kra~" "plantilla_cartel2.kra" "plantilla_cartel.png" "plantilla_cartel.kra~" "plantilla_cartel.kra" "plantilla-cartel-autosave.kra" "overflow/" "osl-talk-haskell/" "logo-fdavidcl/" "logo/" "logaco.pdf" "lista_seminarios.msg" "libro_calc_diferencial_integral.zip" "libro_calc_diferencial_integral/" "libreim_folleto_lorem.odt" "libreim_folleto.pdf" "libreim_folleto.odt" "home/" "herramientas-im/" "hero.png" "Gemfile.lock.old" "Gemfile.lock" "foro/" "form-im/" "folleto_doble.tex~" "folleto_doble.tex" "folleto_doble.pdf" "folleto_doble.log" "folleto_doble.aux" "fdavidcl_apuntes/" "discourse_fork/" "discourse_docker/" "discourse_burro/" "discourse/" "dgiim.github.io/" "dgiim.claves" "carteles/" "carteld.pdf" "calendar/" "calculo/" "blog/" "biostar2-test/" "biostar-test/" "awesome/" "assets/" "apuntesDGIIM/" "about-us/" "HackerRank/" "../" "./")
+
+ ("/media/datos/Documents/" (22682 35510 946796 800000) "WP_20150727_001_processed(1).jpg~" "Work/" "Wolfram Mathematica/" "Web/" "Universidad/" "undefined/" "ubuntu.sh" "tickets_lacuna.pdf" "TakBetaRules3-10-16.pdf" "Suomi/" "stop_hotspot.bat" "SteamLinux/" "Steam/" "start_hotspot.bat" "Security/" "Research/" "Projects/" "pocket_ril_export.html" "out.pdf" "namecheap-order-22762145.pdf" "MueblesPisoGranada.csv" "mod145.pdf" "mathsmagic_full.pdf" "libreim/" "Learning/" "knime-workspace/" "interferencias/" "inout16.ods" "ig-teo3.pdf" "Github/" "firefox_bookmarks.html" "feedly.opml" "EA Games/" "dropbox_public.zip" "Digitalizaciones/" "Data/" "Cursos/" "complexbeauties_cal17.pdf" "ClimateChange_01-05_DigitalPrelim.pdf" "Biblioteca/" "bash.quickref.pdf" "auto-install.sh" "Anki/" ".sync-conflict-20160907-172706.DS_Store" ".sync-conflict-20160904-225233.DS_Store" ".stfolder" ".DS_Store" "pisaco.pdf" "../" "./")
+
+ ("/media/datos/" (22682 31381 717819 700000) "Virtual/" "Videos/" "System Volume Information/" "Pictures/" "Music/" "Downloads/" "Documents/" ".Trash-1000/" "$RECYCLE.BIN/" "../" "./")
+
+ ("/media/" (22682 40059 509300 788000) "../" "datos/" "./")
+
+ ("/home/" (22682 42155 46549 893000) "fdavidcl/" "../" "./")
+
+ ("/media/datos/Documents/Projects/cosmere/" (22682 22861 948156 0) "_site/" "_posts/" "_config.yml" "index.md" "Gemfile.lock" "Gemfile" "about.md" ".sass-cache/" ".gitignore" "../" "./")
+
+ ("/home/fdavidcl/.emacs.d/" (22579 15467 266259 800000) "url/" "tutorial/" "session.109c5b11cb1f8f2e0f147604036752878100000011320065" "session.108eaf1b348b4b1d9b147709421932447800000011310039" "session.108eaf1b348b4b1d9b147707031289284200000011310038" "session.108eaf1b348b4b1d9b1476957595895300000011310037" "session.10713a14a1278dabb147868908810628100000010940067" "session.1070dc31f674365c43147609780686266200000011410037" "session.102207a8ceee3a0c1a147613618549158400000010350044" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "auto-save-list/" "abbrev_defs" ".gitignore" "../" "./")
+
+ ("/media/datos/Documents/interferencias/interferencias.github.io/_posts/" (22576 33897 696345 100000) "2016-11-19-what-about-privacy.md" "2016-11-19-Tattoos_no_longer_private.md" "2016-10-10-telegram.md~" "2016-10-10-telegram.md" "../" "./")
+
+ ("/media/datos/Documents/interferencias/interferencias.github.io/" (22576 26264 594857 100000) "_site/" "_posts/" "_layouts/" "_includes/" "_config.yml~" "_config.yml" "rules.md~" "rules.md" "README.md" "links.md~" "links.md" "LICENSE" "join.md~" "join.md" "info.md~" "info.md" "index.md~" "index.html~" "index.html" "Gemfile~" "Gemfile.lock" "Gemfile" "contact.md~" "contact.md" "assets/" ".gitignore" ".git/" "../" "./")
+
+ ("/media/datos/Documents/interferencias/interferencias.github.io/assets/stylesheets/" (22576 26542 4779 800000) "normalize.css~" "normalize.css" "default.scss~" "default.scss" "default.css~" "../" "./")
+
+ ("/media/datos/Documents/interferencias/interferencias.github.io/_layouts/" (22576 25198 569630 900000) "post.html~" "post.html" "page.html~" "page.html" "default.html~" "default.html" "../" "./")
+
+ ("/media/datos/Documents/Seminarios/26 minis-im/" (22567 18875 202552 200000) "tutorials/" "template.dzslides" "software.org" "README.md" "README.html" "presentacion.md" "presentacion.html" "plantilla.md" "plantilla.html" "Makefile" "LICENSE" "ejemplo.pdf" "ejemplo.log" "ejemplo.aux" "assets/" ".markdown-preview.html" ".gitmodules" ".gitignore" ".git/" ".DS_Store" "#Makefile#" "../" "./")
+
+ ("/media/datos/Documents/Github/misc-problems/hackerrank/ruby/methods/" (22557 12987 463354 600000) "palindromic-primes.rb~" "palindromic-primes.rb" "../" "./")
+
+ ("/media/datos/Documents/Universidad/5/1/CPD/p4/vm/vagrant-spark/" (22573 40481 731853 300000) "Vagrantfile" "spark-logo.png" "README.pdf" "README.md" "provisioning/" "Makefile~" "Makefile" "examples/" "doc.pdf" "doc.md~" "doc.md" "ansible.png" "Actividad4_Vagrant-Spark_David_Charte.pdf" ".vagrant/" ".gitignore" ".git/" "../" "./")
+
+ ("/home/fdavidcl/1/CPD/p4/vm/vagrant-spark/" (22573 40481 731853 300000) "Vagrantfile" "spark-logo.png" "README.pdf" "README.md" "provisioning/" "Makefile~" "Makefile" "examples/" "doc.pdf" "doc.md~" "doc.md" "ansible.png" "Actividad4_Vagrant-Spark_David_Charte.pdf" ".vagrant/" ".gitignore" ".git/" "../" "./")
+
+ ("/home/fdavidcl/emacs.d/" (22574 14416 106490 195000) "init.el" "myinit.org" "../" ".git/" "snippets/" "elpa/" "./" "myinit.el" "auto-save-list/")
+
+ ("/media/datos/Documents/Universidad/5/1/IN/p1/" (22574 60719 289819 900000) "summary.latex" "subastas_eBay.xls" "notas.txt~" "notas.txt" "Makefile" "informe.pdf" "informe.md~" "informe.md" "img/" "guion1_clasif_2016-17.pdf" "entrega/" "eda.R~" "eda.R" "ebay_auctions.csv" "convert_csv.R~" "convert_csv.R" "confusion_svm.csv" "confusion_randf.csv" "confusion_mlp.csv" "confusion_knn.csv" "confusion_c45.csv" "confusion_1nn.csv" "../" "./")
+
+ ("/media/datos/Documents/interferencias/interferencias.github.io/assets/" (22576 19226 526761 600000) "stylesheets/" "images/" "../" "./")
+
+ ("/media/datos/Documents/libreim/hackblog/" (22567 18830 606979 0) "travis.png" "template.dzslides" "seminario.jpg" "README.md" "README.html" "purecss.png" "presentacion.md~" "presentacion.md" "presentacion.html" "people.jpeg" "original.jpg" "newblog.png" "Makefile" "logo.png" "learnall.png" "index.html" "ifttt.png" "fullblog.png" "dgiimorg.png" "conclusiones.md" "conclusiones.html" "blogsnap.png" "awesomesnap.png" "apuntessnap.png" ".nojekyll" ".gitignore" ".git/" "../" "./")
+
+ ("/home/fdavidcl/1/CPD/p4/vm/" (22562 65389 363115 700000) "Vagrantfile" "vagrant-spark/" ".vagrant/" "../" "./")
+
+ ("/home/fdavidcl/1/CPD/p4/" (22556 61006 515361 100000) "vm/" "quijote.txt" "practica_4_CPD_v1.pdf" "doc.md~" "doc.md" "../" "./")
+
+ ("/home/fdavidcl/1/CPD/" (22555 7435 678514 300000) "README.md" "p4/" "p3/" "p1 lxc/" "claves" "3 computo amd/" "2 pliego/" "1 expo cpd/" ".gitignore" ".git/" "../" "./")
+
+ ("/home/fdavidcl/1/" (22507 61704 821703 600000) "IN/" "Fourier/" "DAI/" "CPD/" "Conmutativa/" "Celeste/" "../" "./")
+
+ ("/media/datos/Documents/Seminarios/26 minis-im/tutorials/" (22538 43414 127935 100000) "terminal.sh" "README.md" "markdown.md" "LICENSE" "images/" "git-github.md" "ejemplo.tex" "ejemplo.pdf" "ejemplo.out" "ejemplo.log" "ejemplo.aux" ".gitignore" ".git" ".#git-github.md" "#git-github.md#" "#ejemplo.tex#" "../" "./")
+
+ ("/media/datos/Documents/crystal/sample/src/" (22536 39234 996564 200000) "sample.cr~" "sample.cr" "sample/" "../" "./")
+
+ ("/media/datos/Documents/crystal/sample/" (22536 39710 840469 700000) "src/" "spec/" "shard.yml~" "shard.yml" "shard.lock" "sample" "README.md" "LICENSE" "libs/" ".travis.yml" ".shards/" ".gitignore" ".git/" "../" "./")
+
+ ("/media/datos/Documents/Github/misc-problems/" (22554 15870 490458 0) "README.md" "project-euler/" "misc/" "Makefile" "LICENSE" "hackerrank/" ".gitignore" ".git/" "../" "./")
+
+ ("/media/datos/Documents/Github/misc-problems/hackerrank/ruby/" (22557 12814 285518 900000) "methods/" "../" "./")
+
+ ("/media/datos/Documents/Github/misc-problems/hackerrank/" (22557 12811 27983 500000) "ruby/" "algorithms/" "../" "./")
+
+ ("/media/datos/Documents/Github/misc-problems/hackerrank/algorithms/" (22555 38163 461948 300000) "sorting/" "search/" "dynamic-programming/" "constructive/" "../" "./")
+
+ ("/media/datos/Documents/Github/misc-problems/hackerrank/algorithms/dynamic-programming/" (22555 40786 971094 100000) "maxsubarray.cc~" "maxsubarray.cc" "../" "./")
+
+ ("/media/datos/Documents/Universidad/5/1/CPD/p4/" (22554 8999 838626 0) "vm/" "practica_4_CPD_v1.pdf" "../" "./")
+
+ ("/media/datos/Documents/Universidad/TFG/dlvisr/R/" (22543 37043 25782 700000) "rbm.R" "plots.R" "pca.R" "model.R" "gui.R" "autoencoder.R" "../" "./")
+
+ ("/media/datos/Documents/Universidad/TFG/dlvisr/" (22543 37043 26652 800000) "README.md" "R/" "NAMESPACE" "LICENSE" "inst/" "exec/" "dlvis.Rproj" "DESCRIPTION" ".Rbuildignore" ".gitignore" ".git/" "../" "./")
+
+ ("/media/datos/Documents/Universidad/TFG/" (22550 20555 971733 900000) "ruta/" "Plantilla TFG.odt" "Plantilla TFG David Charte.pdf" "Plantilla TFG David Charte.odt" "fundamentos-deep-learning/" "dlvisr/" "deeplearningbooks/" "../" "./")
+
+ ("/media/datos/Documents/Universidad/" (22520 54996 797897 400000) "TFG/" "solicitudTFG.pdf" "P5_ACEPTA.doc" "MODELOsolicitudTFG.odt" "mod145 copia.pdf" "Domiciliación bancaria a proveedores.pdf" "Domiciliación bancaria a proveedores.docx" "DNI2.jpg" "DNI1.jpg" "dni.pdf" "dni.odt" "datosbanco_servhabi" "criptografia_curvas_eliptica.pdf" "Charte_proveedores.pdf" "calculo_diferencial_integral_func_una_var.pdf" "5/" "4/" "3/" "2/" "1/" ".DS_Store" "../" "./")
+
+ ("/media/datos/Documents/Universidad/TFG/udar/" (22550 19291 864900 900000) "ruta.Rproj" "README.md~" "README.md" "R/" "NAMESPACE" "LICENSE" "DESCRIPTION~" "DESCRIPTION" ".Rbuildignore" ".gitignore" ".git/" "../" "./")
+
+ ("/media/datos/Documents/crystal/sample/src/sample/" (22536 38775 314127 700000) "version.cr" "../" "./")
+
+ ("/media/datos/Documents/libreim/apuntesDGIIM/Estructura de datos/" (22531 65234 575038 400000) "Vector.h" "Tema1.tex" "Tema1.pdf" "Tema1.org" "tema1.md" "../" "./")
+
+ ("/media/datos/Documents/libreim/apuntesDGIIM/" (22535 34452 627226 500000) "Álgebra I/" "Sistemas Operativos/" "recursos/" "README.md" "rake_helpers.rb~" "rake_helpers.rb" "Rakefile" "LICENSE.md" "Estructura de datos/" "Estructura de Computadores/" "Análisis Matemático I/" ".gitignore" ".git/" "../" "./")
+
+ ("/media/datos/Documents/crystal/" (22536 38775 306671 600000) "test.cr~" "test.cr" "sample/" "../" "./")
+
+ ("/media/datos/Documents/Github/hacktoberfest-dcoy/" (22524 637 227249 100000) "README.md" "output" "hello_world1.ada" "hello_world.scala~" "hello_world.scala" "hello_world.py" "hello_world.lisp" "hello_world.cpp" "hello_world.c" "hello_world.ada" "helloWorld.rb" "helloworld.py" "helloWorld.php" "helloWorld.lua" "helloWorld.kt" "helloWorld.hs" "helloworld.f" "HelloWorld.cs" "helloWorld.clj" "helloWorld.c" "helloWorld-roringbbk.rb" "helloWorld Java/" "hello-world.sh" "hello-world.r" "hello-world.pl" "hello-world.bf" "haiworld.lol" "Cplusplus.cc" ".git/" "../" "./")
+
+ ("/media/datos/Documents/libreim/fdavidcl_apuntes/" (22531 26937 445918 600000) "Álgebra I/" "_minted-Tema1/" "Tema1.pdf" "Tema1.out" "Tema1.log" "Tema1.aux" "Sistemas Operativos/" "recursos/" "README.md" "Rakefile" "LICENSE.md" "Estructura de datos/" "Estructura de Computadores/" "apuntes.toc" "Análisis Matemático I/" ".travis.yml" ".out-repo/" ".out/" ".gitignore" ".git/" "../" "./")
+
+ ("/media/datos/Documents/Seminarios/26 minis-im/demos/" (22522 3320 38431 700000) "terminal.sh" "git-github.sh" "ejemplo.pdf" "ejemplo.out" "ejemplo.log" "ejemplo.latex" "ejemplo.aux" ".DS_Store" "../" "./")
+
+ ("/home/fdavidcl/sandbox/" (22521 9838 190501 479000) "test/" "../" "./" "index.html")
+
+ ("/home/fdavidcl/sandbox/test/" (22521 9838 193834 794000) "../" "./" "index.html")
+
+ ("/media/datos/Documents/Github/simple_validate/lib/simple_validate/" (22521 18246 513676 300000) "version.rb" "validates_presence_of.rb" "validates_numericality_of.rb" "validates_length_of.rb" "validates_format_of.rb" "validates_base.rb" "errors.rb" "../" "./")
+
+ ("/media/datos/Documents/Github/simple_validate/lib/" (22521 17584 513878 400000) "simple_validate.rb" "simple_validate/" "../" "./")
+
+ ("/media/datos/Documents/Github/simple_validate/spec/simple_validate/" (22521 18005 458368 300000) "validates_presence_of_spec.rb" "validates_numericality_of_spec.rb" "validates_length_of_spec.rb" "validates_format_of_spec.rb" "../" "./")
+
+ ("/media/datos/Documents/Github/simple_validate/spec/" (22521 14813 813626 300000) "spec_helper.rb" "simple_validate_spec.rb" "simple_validate/" "errors_spec.rb" "../" "./")
+
+ ("/media/datos/Documents/Github/simple_validate/" (22521 15710 228644 300000) "spec/" "simple_validate.gemspec" "README.md" "Rakefile" "LICENSE.txt" "lib/" "Gemfile.lock" "Gemfile" ".travis.yml" ".rspec" ".gitignore" ".git/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

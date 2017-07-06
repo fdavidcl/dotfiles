@@ -1,70 +1,21 @@
-#+TITLE: Emacs configuration
-#+AUTHOR: David Charte
-
-* References
-
-Other emacs configuration files are a huge inspiration for this one, mainly [[https://github.com/M42/.emacs.d][M42's]] and [[https://github.com/andreshp/.emacs.d/][andreshp's]].
-
-* TODO
-
-** org-ref
-
-#+BEGIN_SRC emacs-lisp
 (use-package org-ref)
-#+END_SRC
 
-* Initializations
-
-** Support for accented characters
-
-#+BEGIN_SRC emacs-lisp
 (require 'iso-transl)
-#+END_SRC
 
-** Default to always install required packages
-
-#+BEGIN_SRC emacs-lisp
 (setq use-package-always-ensure t)
-#+END_SRC
 
-** Smooth scroll
-
-#+BEGIN_SRC emacs-lisp
 (setq scroll-margin 0)
 (setq scroll-conservatively 10000)
 (setq scroll-preserve-screen-position t)
-#+END_SRC
 
-
-** Theming
-#+BEGIN_SRC emacs-lisp
 (use-package base16-theme
   :ensure t
   :config
   (load-theme 'base16-chalk t))
-#+END_SRC
-* Emacs for lazy people
 
-Emacs is one of the most powerful, extensible editors out there. However, learning to use it is not an easy task, and I'm just really lazy. The following are some packages that I hope will make your life way easier. And if you already use Emacs, I encourage you to try them and see if they help you get a more comfortable development environment.
-
-** Smex
-
-In Emacs we use M-x (<kbd>Alt</kbd>+<kbd>X</kbd>) to enter any command without the need for a dedicated keyboard shortcut or menu entry. By default Emacs doesn't help much while writing a command, and it can be challenging to remember many of them, as well as tedious writing the long ones (=package-list-packages= anyone?). [[https://github.com/nonsequitur/smex/][Smex]] is a M-x enhancement for Emacs, built on top of Ido, which means it will try to predict and autocomplete commands as you write them.
-
-In order to install and enable Smex, add the following code to your initialization file:
-
-#+BEGIN_SRC emacs-lisp
 (use-package smex
 :config (smex-initialize))
-#+END_SRC
 
-** Ergoemacs
-
-If you're just starting to use emacs, you may find it difficult to learn all the new keybindings. If you're a long-time user, you may have experienced repetitive strain injury (RSI), also known as [[https://en.wikipedia.org/wiki/Emacs#Emacs_pinky][Emacs pinky]]. Don't worry, I've got just the solution for you: [[https://ergoemacs.github.io/index.html][ergoemacs-mode]] is a minor-mode that sets ergonomic and well-known keybindings for common editing functions, with the aim of reducing RSI as well as adding some familiarity to the use of emacs.
-
-Just as before, add the following code to your initialization file and restart Emacs to use it:
-
-#+BEGIN_SRC emacs-lisp
 (use-package ergoemacs-mode
 :init
   (setq ergoemacs-theme nil)
@@ -72,43 +23,19 @@ Just as before, add the following code to your initialization file and restart E
 :config
   (ergoemacs-mode 1)
 )
-#+END_SRC
 
-You can check [[https://ergoemacs.github.io/key-setup.html][your new keybinding layout]]. Remember that, after enabling Ergoemacs, the keyboard shortcut that allows you to enter a custom command becomes <kbd>Alt</kbd>+<kbd>A</kbd>.
-
-** Which-key
-
-[[https://github.com/justbur/emacs-which-key][Which-key]] displays the key bindings following your currently entered incomplete command. That way, when you can't remember which key to press, you'll have a cheat sheet in a couple of seconds.
-
-#+BEGIN_SRC emacs-lisp
 (use-package which-key
 :config (which-key-mode))
-#+END_SRC
 
-[[/media/datos/Documents/undefined/emacs-which-key.png]]
-
-** Auto-reload stuff
-
-When using version control, files generally change while having them open in the editor. If this happens, I expect my editor to refresh the files so that I don't write on an old version. Emacs doesn't enable this behavior by default, rather letting the user decide if they want to reload files. Instead, we can set it to automatically reload files from disk when changed via these configuration lines (source: [[http://pragmaticemacs.com/emacs/automatically-revert-buffers/][Pragmatic Emacs]]):
-
-#+BEGIN_SRC emacs-lisp
 (global-auto-revert-mode 1)
 (add-hook 'dired-mode-hook 'auto-revert-mode)
-#+END_SRC
 
-* Additional keybindings
-
-#+BEGIN_SRC emacs-lisp
 ;(global-set-key [f8] 'neotree-toggle)
 (global-set-key (kbd "<f5>") 'magit-status)
 (global-set-key [f12] 'ess-eval-region-or-line-and-step)
 (global-set-key (kbd "C-k") 'comment-or-uncomment-region)
 ;(global-set-key (kbd "C-x C-a") 'mark-whole-buffer)
-#+END_SRC
 
-** Switch buffers with Ctrl+Tab
-
-#+BEGIN_SRC emacs-lisp
 ;; Switch buffers with ctrl-tab
 (global-set-key [C-tab] 'other-window)
 (global-set-key [C-iso-lefttab] 
@@ -116,40 +43,18 @@ When using version control, files generally change while having them open in the
       (interactive)
       (other-window -1)))
 (define-key org-mode-map [C-tab] nil)
-#+END_SRC
 
-* Snippets
-
-** Yasnippet
-
-#+BEGIN_SRC emacs-lisp
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
-#+END_SRC
 
-* Per language setup
-
-** Org mode
-
-*** Initializations
-
-#+BEGIN_SRC emacs-lisp
 (setq org-support-shift-select t)
-#+END_SRC
 
-*** Additions
-
-#+BEGIN_SRC emacs-lisp
 (add-hook 'text-mode-hook 'visual-line-mode)
 (add-hook 'org-mode-hook 'org-bullets-mode)
 (add-hook 'org-mode-hook 'org-indent-mode)
-#+END_SRC
 
-*** Title formatting
-
-#+BEGIN_SRC emacs-lisp
 (set-face-attribute 'org-level-1 nil
   :inherit 'outline-1
   :foreground "#909090"
@@ -193,13 +98,7 @@ When using version control, files generally change while having them open in the
   :inherit 'outline-7
   :foreground "#909090"
   :font "Noto Sans")
-#+END_SRC
 
-** LaTeX
-
-I just mercilessly copy andreshp's configuration here.
-
-#+BEGIN_SRC emacs-lisp
 (setq LaTeX-math-list
   (quote (
      ("B" "mathbb" "" nil)
@@ -219,9 +118,7 @@ I just mercilessly copy andreshp's configuration here.
      ("C-(" "left(" "" nil)
      ("C-)" "right)" "" nil)
      )))
-#+END_SRC
 
-#+BEGIN_SRC emacs-lisp
 (use-package cdlatex
 :ensure t
 :init
@@ -276,4 +173,3 @@ I just mercilessly copy andreshp's configuration here.
   (add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
   (add-hook 'latex-mode-hook 'turn-on-cdlatex)   ; with Emacs latex mode
 )
-#+END_SRC
