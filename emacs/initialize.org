@@ -33,16 +33,37 @@ Other emacs configuration files are a huge inspiration for this one, mainly [[ht
 (setq scroll-margin 0)
 (setq scroll-conservatively 10000)
 (setq scroll-preserve-screen-position t)
+(global-auto-composition-mode -1)
 #+END_SRC
 
+** Show column number
+
+#+BEGIN_SRC emacs-lisp
+(column-number-mode)
+#+END_SRC
 
 ** Theming
 #+BEGIN_SRC emacs-lisp
-(use-package base16-theme
-  :ensure t
-  :config
-  (load-theme 'base16-chalk t))
+  (use-package base16-theme
+    :ensure t
+    :config
+    (load-theme 'base16-chalk t))
+  ;; (use-package xresources-theme
+  ;;   :ensure t
+  ;;   :config
+  ;;   (load-theme 'xresources t))
+  ;(load-file "~/.emacs.d/colors.el")
+  ;(load-theme 'wal t)
 #+END_SRC
+
+** HiDPI support
+
+In GNOME 3.26, the settings daemon replaces the system's current dpi value to 96. This makes fonts in Emacs too small. Since there are no other GUI elements than text, a quick fix is just to make it larger:
+
+#+BEGIN_SRC emacs-lisp
+(set-face-attribute 'default nil :height 190)
+#+END_SRC
+
 * Emacs for lazy people
 
 Emacs is one of the most powerful, extensible editors out there. However, learning to use it is not an easy task, and I'm just really lazy. The following are some packages that I hope will make your life way easier. And if you already use Emacs, I encourage you to try them and see if they help you get a more comfortable development environment.
@@ -143,7 +164,8 @@ When using version control, files generally change while having them open in the
 
 #+BEGIN_SRC emacs-lisp
 (add-hook 'text-mode-hook 'visual-line-mode)
-(add-hook 'org-mode-hook 'org-bullets-mode)
+(use-package org-bullets
+  :config (add-hook 'org-mode-hook 'org-bullets-mode))
 (add-hook 'org-mode-hook 'org-indent-mode)
 #+END_SRC
 
@@ -276,4 +298,19 @@ I just mercilessly copy andreshp's configuration here.
   (add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
   (add-hook 'latex-mode-hook 'turn-on-cdlatex)   ; with Emacs latex mode
 )
+#+END_SRC
+
+** R
+
+*** Emacs Speaks Statistics
+
+#+BEGIN_SRC emacs-lisp
+(use-package ess)
+(use-package ess-smart-underscore)
+(use-package ess-smart-equals)
+#+END_SRC
+
+** Jekyll
+
+#+BEGIN_SRC emacs-lisp
 #+END_SRC
