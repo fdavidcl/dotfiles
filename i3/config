@@ -286,7 +286,9 @@ client.background $base07
 
 # rofi launcher
 # bindsym Mod1+Tab exec rofi -show window -c ~/.config/rofi/config
-bindsym $mod+space exec rofi -show drun -c ~/.config/rofi/config
+# bindsym $mod+space exec rofi -show drun -c ~/.config/rofi/config
+bindsym $mod+space exec rofi -show combi -c ~/.config/rofi/config
+
 
 # exposé-like task switcher
 bindsym Mod1+Tab exec skippy-xd-fix

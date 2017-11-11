@@ -1,5 +1,6 @@
 ! Enabled modi
-rofi.modi:                           window,run,ssh,drun
+rofi.modi:                           window,run,ssh,drun,combi
+rofi.combi-modi:                          window,drun
 
 ! Window opacity
 rofi.opacity:                        0
