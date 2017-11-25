@@ -205,7 +205,7 @@ bindsym $mod+Shift+F7 move container to workspace number 17
 bindsym $mod+Shift+F8 move container to workspace number 18
 bindsym $mod+Shift+F9 move container to workspace number 19
 
-bindsym $mod+End exec --no-startup-id python "~/.config/i3/new_workspace.py"
+bindsym $mod+End exec --no-startup-id python ~/.config/i3/new_workspace.py
 
 # assign [class="^Firefox$"] $w1
 # assign [class="^Clementine$"] $w9
@@ -347,7 +347,16 @@ bindsym $mod+Escape mode "$mode_system"
 # bindsym $mod+Shift+F8 move container to workspace $dp
 
 # notes workspace
-bindsym $mod+n exec "i3-msg 'workspace org'; emacsclient -c /media/datos/Sync/notes.org"
+bindsym $mod+n exec "xdotool search --name 'notes.org' windowactivate && i3-msg kill || emacsclient -c /media/datos/Sync/notes.org"
+for_window [class="Emacs" title="notes.org"] floating enable
+for_window [class="Emacs" title="notes.org"] resize set 1920 1280
+for_window [class="Emacs" title="notes.org"] move position center
+
+# Timelog window
+bindsym $mod+c exec "xdotool search --name 'timelog.org' windowactivate && i3-msg kill || emacsclient -c /media/datos/Documents/timelog.org"
+for_window [class="Emacs" title="timelog.org"] floating enable
+for_window [class="Emacs" title="timelog.org"] resize set 1920 1280
+for_window [class="Emacs" title="timelog.org"] move position center
 
 # END i3 configuration
 # BEGIN startup programs
@@ -390,7 +399,7 @@ exec_always xset s noblank
 exec_always xset -dpms
 exec xfce4-power-manager
 
-exec_always python "~/.config/i3/autoname_workspaces.py"
+exec_always python ~/.config/i3/autoname_workspaces.py
 
 # redshift (same as f.lux)
 exec redshift -l37.1809462:-3.5912717
