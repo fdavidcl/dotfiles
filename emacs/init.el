@@ -1,9 +1,9 @@
 
 ;; Package management
 (require 'package)
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+;(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
+;(add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (package-initialize)
 (setq package-enable-at-startup nil)
@@ -107,12 +107,6 @@
      (340 . "#268fc6")
      (360 . "#268bd2"))))
  '(vc-annotate-very-old-color nil t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 102 :width normal :foundry "PfEd" :family "Source Code Pro")))))
 
 ;; Load rest of configuration from initialize.org
 (org-babel-load-file (expand-file-name "~/.emacs.d/initialize.org"))
