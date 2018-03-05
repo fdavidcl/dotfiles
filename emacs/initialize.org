@@ -44,10 +44,10 @@ Other emacs configuration files are a huge inspiration for this one, mainly [[ht
 
 ** Theming
 #+BEGIN_SRC emacs-lisp
-  (use-package base16-theme
-    :ensure t
-    :config
-    (load-theme 'base16-chalk t))
+  ;;(use-package base16-theme
+  ;;  :ensure t
+  ;;  :config
+  ;;  (load-theme 'base16-chalk t))
   ;; (use-package xresources-theme
   ;;   :ensure t
   ;;   :config
@@ -73,6 +73,23 @@ In GNOME 3.26, the settings daemon replaces the system's current dpi value to 96
 (find-file-noselect "~/Documentos/timelog.org")
 #+END_SRC
 
+* Theme
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
+(use-package nord-theme
+  :ensure t
+  :load-path "themes")
+(if (daemonp)
+    (add-hook 'after-make-frame-functions
+        (lambda (frame)
+            (select-frame frame)
+            (load-theme 'nord t)))
+    (load-theme 'nord t))
+(use-package rainbow-delimiters
+  :ensure t
+  :commands rainbow-delimiters-mode
+  :init (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
+#+END_SRC
 
 * Emacs for lazy people
 

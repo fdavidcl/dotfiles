@@ -13,7 +13,8 @@
 
 # Custom wallpaper
 # set $wallpaper /media/datos/Pictures/lorca.jpg
- set $wallpaper /media/datos/Pictures/Wallpapers/4k/destination_4k.jpg
+# set $wallpaper /media/datos/Pictures/Wallpapers/4k/destination_4k.jpg
+# set $wallpaper /media/datos/Pictures/Wallpapers/4k/red_panda_unsplash.jpg
 # set $wallpaper /media/datos/Pictures/a44jaengranada.jpg
 #  set $wallpaper /media/datos/Pictures/Wallpapers/MirrorsEdge/Captura de pantalla de 2016-03-11 01-00-09.png
 # set $wallpaper /media/datos/Pictures/canon-eos-400d/2017-granada/IMG_4539.JPG
@@ -217,7 +218,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+Escape restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -286,12 +287,12 @@ client.background $base07
 
 # rofi launcher
 # bindsym Mod1+Tab exec rofi -show window -c ~/.config/rofi/config
-# bindsym $mod+space exec rofi -show drun -c ~/.config/rofi/config
-bindsym $mod+space exec rofi -show combi -c ~/.config/rofi/config
+bindsym $mod+space exec rofi -show drun -c ~/.config/rofi/config
+# bindsym $mod+space exec rofi -show combi -c ~/.config/rofi/config
 
 
 # exposé-like task switcher
-bindsym Mod1+Tab exec skippy-xd-fix
+# bindsym Mod1+Tab exec skippy-xd-fix
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
@@ -333,7 +334,7 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Escape mode "$mode_system"
+# bindsym $mod+Escape mode "$mode_system"
 
 # multimonitor setup
 # set $hdmi "11: hdmi "
@@ -369,13 +370,13 @@ for_window [class="Emacs" title="timelog.org"] move position center
 exec yabar
 
 # wallpaper
-exec_always wal -t -i "$wallpaper"
-# exec --no-startup-id nitrogen --restore
+# exec_always wal -t -i "$wallpaper"
+exec --no-startup-id nitrogen --restore
 
 # Fix DPI in GTK apps:
 exec /usr/lib/gnome-settings-daemon/gsd-xsettings
 # Fix DPI broken by GSD in non-GTK apps:
-exec_always xrdb -merge ~/.Xresources
+# exec_always xrdb -merge ~/.Xresources
 # exec xfsettingsd
 # exec xrandr --output eDP1 --mode 3840x2160 --dpi 192 --preferred
 
@@ -383,23 +384,23 @@ exec_always xrdb -merge ~/.Xresources
 exec_always xset -b
 
 # set touchpad settings
-exec_always xinput set-prop 14 294 0.5 # fast acceleration
-exec_always xinput set-prop 14 282 1 # enables tapping
-exec_always xinput set-prop 14 290 1 # enables natural scrolling
+exec_always xinput set-prop 14 298 0.5 # fast acceleration
+exec_always xinput set-prop 14 286 1 # enables tapping
+exec_always xinput set-prop 14 294 1 # enables natural scrolling
 
 # compositing manager
-exec compton --config ~/.config/compton/compton.conf
+exec_always compton --config ~/.config/compton/compton.conf
 
-exec brightside&
+# exec brightside&
 
 # disable screen dim after 10min
 # exec_always xset s off -dpms
 exec_always xset s off
 exec_always xset s noblank
 exec_always xset -dpms
-exec xfce4-power-manager
+# exec xfce4-power-manager
 
-exec_always python ~/.config/i3/autoname_workspaces.py
+# exec_always python ~/.config/i3/autoname_workspaces.py
 
 # redshift (same as f.lux)
 exec redshift -l37.1809462:-3.5912717
