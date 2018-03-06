@@ -55,23 +55,25 @@ WINDOW_ICONS = {
     'chromium': fa.icons['chrome'],
     'google-chrome': fa.icons['chrome'],
     'gpick': fa.icons['eyedropper'],
-    'libreoffice': fa.icons['file-text-o'],
+    'libreoffice': fa.icons['file-text'],
     'mupdf': fa.icons['file-pdf-o'],
+    'okular': fa.icons['file-pdf-o'],
     'spotify': fa.icons['music'],  # could also use the 'spotify' icon
     'steam': fa.icons['steam'],
-    'subl': fa.icons['file-text-o'],
-    'subl3': fa.icons['file-text-o'],
-    'thunar': fa.icons['folder-o'],
+    'subl': fa.icons['file-text'],
+    'subl3': fa.icons['file-text'],
+    'thunar': fa.icons['folder'],
     'urxvt': fa.icons['terminal'],
     'xfce4-terminal': fa.icons['terminal'],
     'zenity': fa.icons['window-maximize'],
-    'emacs': fa.icons['pencil-square-o'],
+    'emacs': fa.icons['file-text'],
     'telegram-desktop': fa.icons['telegram'],
     'tweetdeck.twitter.com': fa.icons['twitter'],
+    'thunderbird': fa.icons['envelope'],
 }
 
 # This icon is used for any application not in the list above
-DEFAULT_ICON = '*'
+DEFAULT_ICON = fa.icons['window-maximize']
 
 
 def icon_for_window(window):
