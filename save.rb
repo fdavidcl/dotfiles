@@ -10,7 +10,7 @@ end
 dotfiles.each do |fl|
   dest = "~/#{fl}"
   begin
-    FileUtils.cp(dest, fl)
+    FileUtils.install(dest, fl)
   	puts "#{fl} ← #{dest}"
   rescue StandardError => e
     puts "\e[31m#{fl} ← #{dest}\e[m"
