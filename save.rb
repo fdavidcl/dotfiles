@@ -8,10 +8,10 @@ dotfiles = Find.find('.').select do |e|
 end
 
 dotfiles.each do |fl|
-  dest = "~/#{fl}"
+  dest = fl.sub(".", "~")
   begin
     FileUtils.install(dest, fl)
-  	puts "#{fl} ← #{dest}"
+    puts "#{fl} ← #{dest}"
   rescue StandardError => e
     puts "\e[31m#{fl} ← #{dest}\e[m"
   end
