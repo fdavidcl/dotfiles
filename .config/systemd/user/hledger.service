@@ -1,0 +1,11 @@
+[Unit]
+Description=hledger
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hledger-web -f /media/datos/Sync/.hledger.journal --serve
+Restart=always
+
+[Install]
+WantedBy=default.target
+
