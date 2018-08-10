@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/i3/config:
+      force: true
+      path: .config/i3/config
+    ~/.emacs.d/init.el: 
+      force: true
+      path: .emacs.d/init.el
+    ~/.emacs.d/initialize.org: .emacs.d/initialize.org
+    ~/.themes/: .themes
