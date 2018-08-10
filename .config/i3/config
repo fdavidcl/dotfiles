@@ -314,7 +314,7 @@ bindsym XF86AudioPrev exec playerctl previous
 for_window [class="^.*"] border pixel 0
 gaps inner 16
 gaps outer 0
-# smart_gaps on
+smart_gaps on
 
 # screenshots
 bindsym Print exec scrot /media/datos/Pictures/Screenshots/screenshot_`date +%Y-%m-%d_%H:%M:%S`.png
@@ -368,7 +368,7 @@ for_window [class="Emacs" title="timelog.org"] move position center
 
 # exec sranrdrd autorandr --change --default
 
-exec yabar
+# exec yabar
 
 # wallpaper
 # exec_always wal -t -i "$wallpaper"
