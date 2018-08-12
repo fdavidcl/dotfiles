@@ -9,7 +9,7 @@ rofi.opacity:                        0
 rofi.width:                          25
 
 ! Number of lines
-rofi.lines:                          36
+rofi.lines:                          32
 
 ! Number of columns
 rofi.columns:                        1
@@ -55,7 +55,7 @@ rofi.color-normal: #222832, #f0f0f0, #222832, #30363d, #12bfd0
 !rofi.color-active: #151515, #acc267, #151515, #303030, #acc267
 !rofi.color-urgent: #151515, #deaf8f, #151515, #303030, #deaf8f
 
-rofi.font: Noto Sans 18
+rofi.font: Roboto 20
 
 ! Border width
 rofi.bw:                             1
@@ -67,7 +67,7 @@ rofi.location:                       2
 rofi.padding:                        16
 
 ! Y-offset relative to location
-rofi.yoffset:                        80
+rofi.yoffset:                        48
 
 ! X-offset relative to location
 rofi.xoffset:                        0
