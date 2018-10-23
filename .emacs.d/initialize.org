@@ -223,13 +223,19 @@ When using version control, files generally change while having them open in the
 )
 #+END_SRC
 
-*** Additions
+*** org-mode
 
 #+BEGIN_SRC emacs-lisp
 (add-hook 'text-mode-hook 'visual-line-mode)
 (use-package org-bullets
   :config (add-hook 'org-mode-hook 'org-bullets-mode))
 (add-hook 'org-mode-hook 'org-indent-mode)
+#+END_SRC
+
+*** Markdown
+
+#+BEGIN_SRC emacs-lisp
+(use-package markdown-mode)
 #+END_SRC
 
 *** Title formatting

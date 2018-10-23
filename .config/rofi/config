@@ -55,7 +55,7 @@ rofi.color-normal: #222832, #f0f0f0, #222832, #30363d, #12bfd0
 !rofi.color-active: #151515, #acc267, #151515, #303030, #acc267
 !rofi.color-urgent: #151515, #deaf8f, #151515, #303030, #deaf8f
 
-rofi.font: Roboto 20
+rofi.font: Roboto 14
 
 ! Border width
 rofi.bw:                             1

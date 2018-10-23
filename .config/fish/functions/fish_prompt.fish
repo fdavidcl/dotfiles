@@ -47,7 +47,7 @@ function fish_prompt
   end
 
   if test $last_command_status -eq 0
-    echo -ne -s " " $success_color $fish $normal_color
+    echo -ne -s " " $normal_color $fish $normal_color
   else
     echo -ne -s " " $error_color $fish $normal_color
   end

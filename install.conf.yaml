@@ -12,5 +12,12 @@
     ~/.emacs.d/init.el: 
       force: true
       path: .emacs.d/init.el
+    ~/.config/rofi/config: .config/rofi/config
     ~/.emacs.d/initialize.org: .emacs.d/initialize.org
-    ~/.themes/: .themes
+    ~/.themes/oomox-krekl: .themes/oomox-krekl
+    ~/.config/fish/functions: .config/fish/functions
+    ~/.config/systemd/user: .config/systemd/user
+    ~/.local/share/xfce4/terminal/colorschemes/nord.theme: .local/share/xfce4/terminal/colorschemes/nord.theme
+    ~/.config/compton/compton.conf: .config/compton/compton.conf
+    ~/.config/gtk-3.0/gtk.css: .config/gtk-3.0/gtk.css
+    ~/.config/fontconfig/fonts.conf: .config/fontconfig/fonts.conf
